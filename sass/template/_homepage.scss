@@ -1,0 +1,97 @@
+.hero-area {
+    padding-top: 85px;
+}
+
+.cer {
+    position: relative;
+    /* overflow-x: clip; */
+
+}
+
+.span {
+    position: absolute;
+
+    width: 280px;
+    height: 140px;
+    /* as the half of the width */
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    border: 1px solid black;
+    border-bottom: 0;
+    right: -50px;
+    transform: rotate(-90deg);
+}
+.hero-main{
+    margin: 0 auto;
+    position: relative;
+}
+.hero-img {
+    background-color: #FCE2DC;
+    padding: 5px;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    img {
+        width: 100%;
+    }
+}
+
+.radius {
+    position: absolute;
+}
+
+.radius-1 {
+    left: calc(50% - 60px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.radius-2 {
+    left: calc(50% - 60px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+
+.radius-3 {
+    left: calc(50% - 90px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -3;
+}
+.radius-4 {
+    right: calc(50% - 90px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.radius-5 {
+    right: calc(50% - 130px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+
+.radius-6 {
+    right: calc(50% - 130px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -3;
+}
+.has-circle{
+    position: relative;
+    .circle{
+        position: absolute;
+    }
+    .circle-1{
+        left: 0px;
+        top: 60%;
+    }
+    .circle-6{
+        right: 0;
+        top: -200px;
+    }
+}
