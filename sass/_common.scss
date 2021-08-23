@@ -19,3 +19,30 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
+.text-primary{
+    color: $primary-color !important;
+}
+.text-secondery{
+    color: $tertiary-text-color !important;
+}
+.title-shape{
+    transform: translateX(60%);
+}
+@include mobile{
+
+    .title-shape {
+        transform: translateX(0%);
+    }
+}
+@include tablet{
+
+    .title-shape {
+        transform: translateX(0%);
+    }
+}
+@include desktop{
+
+    .title-shape {
+        transform: translateX(20%);
+    } 
+}
