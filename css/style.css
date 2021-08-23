@@ -11,6 +11,7 @@ body {
 p,
 .paragraph {
   font-weight: 400;
+  color: #888888 !important;
 }
 
 h1,
@@ -102,6 +103,34 @@ h5,
   line-height: 20px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: #FCE2DC;
+  color: #fff;
+}
+
+::selection {
+  background-color: #FCE2DC;
+  color: #fff;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
 .fixd-manu .navbar-nav .nav-item .nav-link {
   margin: 10px 0 !important;
 }
@@ -110,6 +139,7 @@ h5,
   position: fixed;
   width: 100%;
   background-color: #fff;
+  color: black;
   z-index: 9999;
 }
 
