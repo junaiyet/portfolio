@@ -6,37 +6,91 @@ $(window).scroll(function () {
     }
   
   })
+// //////////////////
+$('.social-logo-slider').slick({
+  dots: false,
+  infinite: true,
+  arrows: false,
+  autoplay:true,
+  fade:false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 991,
 
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        dots: false,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        dots: false,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  
+  ]
+});
   // /////////////////
   $('.tstimonial-left-slider').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    prevArrow:'<i class="fas fa-arrow-left left-arrow"></i>',
-    nextArrow:'<i class="fas fa-arrow-right right-arrow"></i>',
+    prevArrow:'<i class="fas fa-arrow-left prev-arrow"></i>',
+    nextArrow:'<i class="fas fa-arrow-right next-arrow"></i>',
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    asNavFor: '.tstimonial-right-slider',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
           infinite: true,
-          dots: true
+          autoplay:false,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          dots: false,
+          infinite: true,
+          arrows: false,
+          autoplay:true,
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
+          dots: false,
+          infinite: true,
+          arrows: false,
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -50,31 +104,32 @@ $(window).scroll(function () {
     arrows: false,
     autoplay:true,
     fade:true,
-    prevArrow:'<i class="fas fa-arrow-left left-arrow"></i>',
-    nextArrow:'<i class="fas fa-arrow-right right-arrow"></i>',
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    asNavFor: '.tstimonial-left-slider',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
