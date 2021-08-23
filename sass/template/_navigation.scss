@@ -1,6 +1,23 @@
+.fixd-manu {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}
+
 .navigation {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 9999;
     .navbar-brand {
         color: $text-color;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
 
         i {
             width: 50px;
@@ -12,9 +29,21 @@
             text-align: center;
             line-height: 50px;
             margin-right: 10px;
+            font-size: 20px;
         }
     }
-
+    .navbar-toggler {
+        padding: 10px 15px;
+        font-size: 24px;
+        line-height: 1;
+        background-color: $primary-bg;
+        border: 0;
+        border-radius:0;
+        transition: none;
+        &:focus{
+            box-shadow: none;
+        }
+    }
     .navbar-nav {
         .nav-item {
             .nav-link {
@@ -23,8 +52,56 @@
                 color: $text-color;
                 padding-left: 58px;
                 padding-right: 0;
-
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+                transition: .4s;
             }
+        }
+    }
+}
+
+@include mobile {
+    .navigation .navbar-nav .nav-item .nav-link {
+        color: #222222;
+        padding-left: 0px;
+
+        line-height: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: -20px;
+        margin: 10px 0 !important;
+        text-align: center;
+    }
+}
+@include tablet {
+    .navigation .navbar-nav .nav-item .nav-link {
+        color: #222222;
+        padding-left: 0px;
+        line-height: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: -20px;
+        margin: 10px 0 !important;
+        text-align: center;
+    }
+}
+@include desktop {
+    .navigation .navbar-nav .nav-item .nav-link {
+        color: #222222;
+        padding-left: 0px;
+
+        line-height: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: -20px;
+        margin: 20px 0 !important;
+        text-align: center;
+    }
+    .navbar-toggler {
+        i{
+
+            font-size: 28px;
         }
     }
 }

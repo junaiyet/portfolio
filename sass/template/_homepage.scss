@@ -1,30 +1,40 @@
 .hero-area {
-    padding-top: 85px;
+    padding-top: 200px;
 }
 
-.cer {
-    position: relative;
-    /* overflow-x: clip; */
+.hero-area {
+    margin-bottom: 100px;
 
+    h4 {
+        color: $primary-color;
+    }
+
+    p {
+        margin: 0 120px 40px 120px;
+    }
 }
 
-.span {
-    position: absolute;
+.btn {
+    padding: 18px 40px;
+    border-radius: 50px;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: $white;
+    transition: .4s;
 
-    width: 280px;
-    height: 140px;
-    /* as the half of the width */
-    border-top-left-radius: 140px;
-    border-top-right-radius: 140px;
-    border: 1px solid black;
-    border-bottom: 0;
-    right: -50px;
-    transform: rotate(-90deg);
+    &:hover {
+        background-color: $white;
+        color: $text-color;
+        border: 1px solid $primary-color;
+    }
 }
-.hero-main{
+
+.hero-main {
     margin: 0 auto;
     position: relative;
+    margin-bottom: 20px;
 }
+
 .hero-img {
     background-color: #FCE2DC;
     padding: 5px;
@@ -32,6 +42,7 @@
     width: 130px;
     height: 130px;
     display: inline-block;
+
     img {
         width: 100%;
     }
@@ -44,54 +55,190 @@
 .radius-1 {
     left: calc(50% - 60px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
 .radius-2 {
     left: calc(50% - 60px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -2;
 }
 
 .radius-3 {
-    left: calc(50% - 90px);
+    left: calc(50% - 91px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -3;
 }
+
 .radius-4 {
     right: calc(50% - 90px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
 .radius-5 {
     right: calc(50% - 130px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -2;
 }
 
 .radius-6 {
     right: calc(50% - 130px);
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -3;
 }
-.has-circle{
+
+.has-circle {
     position: relative;
-    .circle{
+    top: -250px;
+
+    .circle {
         position: absolute;
     }
-    .circle-1{
+
+    .circle-1 {
         left: 0px;
         top: 60%;
     }
-    .circle-6{
+
+    .circle-2 {
+        width: 75px;
+        height: 75px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        top: -260px;
+        left: 10%;
+    }
+
+    .circle-3 {
+        width: 38px;
+        height: 38px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        left: 22%;
+        top: 120px;
+    }
+
+    .circle-4 {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        right: 15%;
+        top: -260px;
+    }
+
+    .circle-5 {
+        width: 135px;
+        height: 135px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        right: 20%;
+        top: 120px;
+        
+    }
+
+    .circle-6 {
         right: 0;
-        top: -200px;
+        top: -300px;
+    }
+    .circle-7 {
+        right: 0;
+        bottom: -400px;
+    }
+
+}
+
+@include mobile {
+    .hero-area {
+        padding-top: 130px;
+
+        p {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .has-circle {
+        display: none;
+    }
+
+    .btn {
+        padding: 13px 30px;
+    }
+}
+
+@include tablet {
+    .hero-area {
+        padding-top: 160px;
+
+        p {
+            margin: 0 0 30px 0;
+        }
+    }
+    .has-circle {
+        .circle-1 {
+            svg {
+                width: 100px;
+                height: 300px;
+            }
+        }
+
+
+
+        .circle-5 {
+            right: 5%;
+        }
+
+        .circle-6 {
+            svg {
+                width: 90px;
+                height: 180px;
+                top: -250px;
+            }
+        }
+
+    }
+}
+@include desktop-lg{
+  .hero-area{
+      h1{
+          margin: 0 -50px;
+      }
+      p{
+          margin: 0 0 40px 0;
+      }
+  }
+}
+// /////////////
+.social-logo{
+    margin-bottom: 120px;
+}
+// //////////
+.global-network{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        background-color: $primary-bg;
+        width: 65%;
+        height: 365px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    h2{
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    p{
+        padding-top: 88px;
+        padding-bottom: 88px;
     }
 }
