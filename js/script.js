@@ -79,7 +79,7 @@ $('.social-logo-slider').slick({
           dots: false,
           infinite: true,
           arrows: false,
-          autoplay:true,
+          autoplay:false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -90,7 +90,7 @@ $('.social-logo-slider').slick({
           dots: false,
           infinite: true,
           arrows: false,
-          autoplay: true,
+          autoplay:false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -121,7 +121,7 @@ $('.social-logo-slider').slick({
       {
         breakpoint: 769,
         settings: {
-          autoplay: true,
+          autoplay: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -129,7 +129,7 @@ $('.social-logo-slider').slick({
       {
         breakpoint: 576,
         settings: {
-          autoplay: true,
+          autoplay: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }

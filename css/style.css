@@ -863,12 +863,6 @@ a:focus {
   .tstimonial::after {
     display: none;
   }
-  .tstimonial .ms-5 {
-    margin-left: 0 !important;
-  }
-  .tstimonial .ms-4 {
-    margin-left: 0 !important;
-  }
   .tstimonial .tstimonial-left-slider p {
     font-size: 14px;
     line-height: 28px;
@@ -886,15 +880,6 @@ a:focus {
   .tstimonial::after {
     display: none;
   }
-  .tstimonial .ms-5 {
-    margin-left: 0 !important;
-  }
-  .tstimonial .ms-4 {
-    margin-left: 0 !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .tstimonial .tstimonial-left-slider p {
     font-size: 14px;
     line-height: 28px;
@@ -903,20 +888,32 @@ a:focus {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .tstimonial .tstimonial-left-slider p {
-    font-size: 14px;
-    line-height: 22px;
-  }
   .tstimonial::after {
     width: 95%;
     height: 450px;
   }
+  .tstimonial .tstimonial-left-slider .quotation {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .tstimonial .tstimonial-left-slider p {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .tstimonial .tstimonial-left-slider .prev-arrow {
     bottom: -50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
   }
   .tstimonial .tstimonial-left-slider .next-arrow {
     left: 30%;
     bottom: -50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
   }
 }
 
@@ -937,6 +934,7 @@ a:focus {
 
 .projects .card {
   position: relative;
+  margin-bottom: 120px;
 }
 
 .projects .card .card-img-overlay {
@@ -964,5 +962,62 @@ a:focus {
 
 .projects .card .breadcrumb .breadcrumb-item::before {
   color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .projects .card .breadcrumb .breadcrumb-item a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .projects .card .breadcrumb .breadcrumb-item a {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .projects .card .breadcrumb .breadcrumb-item a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+footer h4 {
+  margin-bottom: 50px;
+}
+
+footer .mobile-number {
+  color: #888888;
+}
+
+footer .list-inline {
+  margin-bottom: 85px;
+}
+
+footer .list-inline .list-inline-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+footer .list-inline .list-inline-item a {
+  color: #222222 !important;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .list-inline .list-inline-item a:hover {
+  color: #FF5733 !important;
+}
+
+footer .footer-bottom a {
+  color: #888888 !important;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .footer-bottom a:hover {
+  color: #FF5733 !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -607,13 +607,7 @@
             display: none;
         }
 
-        .ms-5 {
-            margin-left: 0 !important;
-        }
 
-        .ms-4 {
-            margin-left: 0 !important;
-        }
 
         .tstimonial-left-slider p {
             font-size: 14px;
@@ -637,15 +631,6 @@
             display: none;
         }
 
-        .ms-5 {
-            margin-left: 0 !important;
-        }
-
-        .ms-4 {
-            margin-left: 0 !important;
-            justify-content: center;
-        }
-
         .tstimonial-left-slider p {
             font-size: 14px;
             line-height: 28px;
@@ -657,25 +642,38 @@
 }
 
 @include desktop {
-    .tstimonial .tstimonial-left-slider p {
-        font-size: 14px;
-        line-height: 22px;
-    }
+    .tstimonial{
+        &::after {
+            width: 95%;
+            height: 450px;
+        }
+        .tstimonial-left-slider{
+            .quotation{
+                width: 40px !important;
+                height: 40px !important;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .prev-arrow {
+                bottom: -50px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+            }
+            .next-arrow {
+                left: 30%;
+                bottom: -50px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+            }
+        }
+    } 
 
-    .tstimonial::after {
-        width: 95%;
-        height: 450px;
-    }
-
-    .tstimonial .tstimonial-left-slider .prev-arrow {
-
-        bottom: -50px;
-    }
-
-    .tstimonial .tstimonial-left-slider .next-arrow {
-        left: 30%;
-        bottom: -50px;
-    }
 }
 
 @include desktop-xxl {
@@ -696,7 +694,7 @@
 // ////////////
 .projects .card {
     position: relative;
-
+   margin-bottom: 120px;
     .card-img-overlay{
         background-image: linear-gradient(rgba(196, 196, 196, 0), rgba(0, 0, 0, 0.8));
         width: 100%;
@@ -726,4 +724,55 @@
         }
     }
 
+}
+@include mobile{
+    .projects .card .breadcrumb .breadcrumb-item a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+@include tablet{
+    .projects .card .breadcrumb .breadcrumb-item a {
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+@include desktop{
+    .projects .card .breadcrumb .breadcrumb-item a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+// ///////////
+footer{
+    h4{
+        margin-bottom: 50px;
+    }
+    .mobile-number{
+        color: $secondery-text-color;
+    }
+    .list-inline{
+        margin-bottom: 85px;
+        .list-inline-item{
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            a{
+                color: $text-color !important;
+                transition: .4s;
+                &:hover{
+                    color: $primary-color !important;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        a{
+            color: $secondery-text-color !important;
+            transition: .4s;
+            &:hover{
+                color: $primary-color !important;
+            }
+        }
+    }
 }
