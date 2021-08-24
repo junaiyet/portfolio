@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 200) {
+    if ($(window).scrollTop() > 50) {
       $(".navigation").addClass("fixd-manu")
     } else {
       $(".navigation").removeClass("fixd-manu")

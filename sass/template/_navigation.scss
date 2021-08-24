@@ -1,4 +1,6 @@
 .fixd-manu {
+    background-color: $white;
+
     .navbar-nav {
         .nav-item {
             .nav-link {
@@ -11,10 +13,10 @@
 .navigation {
     position: fixed;
     width: 100%;
-    background-color: $white;
-
- color: black;
+    transition: .4s;
+    color: black;
     z-index: 9999;
+
     .navbar-brand {
         color: $text-color;
         font-size: 16px;
@@ -34,18 +36,21 @@
             font-size: 20px;
         }
     }
+
     .navbar-toggler {
         padding: 10px 15px;
         font-size: 24px;
         line-height: 1;
         background-color: $primary-bg;
         border: 0;
-        border-radius:0;
+        border-radius: 0;
         transition: none;
-        &:focus{
+
+        &:focus {
             box-shadow: none;
         }
     }
+
     .navbar-nav {
         .nav-item {
             .nav-link {
@@ -58,11 +63,13 @@
                 line-height: 14px;
                 font-weight: 400;
                 transition: .4s;
-                &:hover{
+
+                &:hover {
                     color: $primary-color;
                 }
             }
-            .active{
+
+            .active {
                 color: $primary-color;
             }
         }
@@ -70,12 +77,13 @@
 }
 
 @include mobile {
-    .navigation{
+    .navigation {
         padding: 5px 10px;
+
         .navbar-nav .nav-item .nav-link {
             color: #222222;
             padding-left: 0px;
-    
+
             line-height: 0px;
             font-size: 14px;
             font-weight: 400;
@@ -85,9 +93,11 @@
         }
     }
 }
+
 @include tablet {
-    .navigation{
+    .navigation {
         padding: 5px 15px;
+
         .navbar-nav .nav-item .nav-link {
             color: #222222;
             padding-left: 0px;
@@ -98,15 +108,17 @@
             margin: 10px 0 !important;
             text-align: center;
         }
-    } 
+    }
 }
+
 @include desktop {
-    .navigation{
+    .navigation {
         padding: 5px 20px;
+
         .navbar-nav .nav-item .nav-link {
             color: #222222;
             padding-left: 0px;
-    
+
             line-height: 0px;
             font-size: 14px;
             font-weight: 400;
@@ -114,9 +126,10 @@
             margin: 20px 0 !important;
             text-align: center;
         }
+
         .navbar-toggler {
-            i{
-    
+            i {
+
                 font-size: 28px;
             }
         }

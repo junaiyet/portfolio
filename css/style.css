@@ -210,12 +210,12 @@ h6,
 }
 
 ::-moz-selection {
-  background-color: #FCE2DC;
+  background-color: #FF5733;
   color: #fff;
 }
 
 ::selection {
-  background-color: #FCE2DC;
+  background-color: #FF5733;
   color: #fff;
 }
 
@@ -279,6 +279,10 @@ a:focus {
           box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06) !important;
 }
 
+.fixd-manu {
+  background-color: #fff;
+}
+
 .fixd-manu .navbar-nav .nav-item .nav-link {
   margin: 10px 0 !important;
 }
@@ -286,7 +290,8 @@ a:focus {
 .navigation {
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
   color: black;
   z-index: 9999;
 }
@@ -522,7 +527,7 @@ a:focus {
   height: 38px;
   border: 1px solid #FF5733;
   border-radius: 50%;
-  left: 22%;
+  left: 19%;
   top: 120px;
 }
 
@@ -540,7 +545,7 @@ a:focus {
   height: 135px;
   border: 1px solid #FF5733;
   border-radius: 50%;
-  right: 20%;
+  right: 12%;
   top: 120px;
 }
 
@@ -1038,26 +1043,46 @@ a:focus {
   background-image: linear-gradient(rgba(196, 196, 196, 0), rgba(0, 0, 0, 0.8));
   width: 100%;
   height: 100%;
+  padding: 35px !important;
 }
 
 .projects .card .card-img-overlay .card-body {
   position: absolute;
   bottom: 0;
+  padding-bottom: 35px !important;
 }
 
 .projects .card .card-img-overlay .card-body h4 {
   color: #fff;
 }
 
-.projects .card .breadcrumb .breadcrumb-item a {
-  color: #fff !important;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 300;
+.projects .card .tag .tag-item {
+  position: relative;
 }
 
-.projects .card .breadcrumb .breadcrumb-item::before {
-  color: #fff;
+.projects .card .tag .tag-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.projects .card .tag .tag-item:last-child::after {
+  display: none;
+}
+
+.projects .card .tag .tag-item a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.projects .card .tag .tag-item::after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 0;
+  width: 1.8px;
+  height: 15px;
+  background-color: #fff;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 @media (max-width: 575.98px) {
@@ -1395,5 +1420,52 @@ footer .footer-bottom a:hover {
   .blogpost .blog .blog-details {
     width: 60%;
   }
+}
+
+.contact {
+  padding-top: 205px;
+  padding-bottom: 95px;
+  position: relative;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #F9F9F9;
+  width: 57%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact .contact-from {
+  width: 46%;
+  margin-bottom: 40px;
+}
+
+.contact .contact-from:last-child {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.contact .contact-from input {
+  background-color: #F9F9F9;
+  font-size: 14px;
+}
+
+.contact .contact-from input:focus-visible {
+  outline: none;
+}
+
+.contact .contact-from .patricklucas {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.contact .contact-from h6 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500px;
 }
 /*# sourceMappingURL=style.css.map */
