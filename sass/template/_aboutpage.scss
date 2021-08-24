@@ -68,28 +68,155 @@
     .about-hero .about-hero-img::after {
         display: none;
     }
+
     .about-hero .about-hero-img::before {
         display: none;
     }
 }
+
 // //////////////////////
-.about-social-logo{
-    .social-logo-img{
-       background-color: $primary-bg;
+.about-social-logo {
+    .social-logo-img {
+        background-color: $primary-bg;
         height: 100px;
     }
 }
+
 // //////////////
-.achivements{
+.achivements {
     margin-bottom: 150px;
-    .achivments-bg{
+
+    .achivments-bg {
         background-color: $primary-bg;
         padding: 75px 65px;
-        .achivments-block{
-            &:last-child{
+
+        .achivments-block {
+            &:last-child {
                 border-bottom: none !important;
                 padding-bottom: 0 !important;
             }
         }
+    }
+}
+
+@include mobile {
+    .achivements {
+        text-align: center;
+
+        .achivments-bg {
+            padding: 30px 15px;
+        }
+    }
+}
+
+@include tablet {
+    .achivements {
+        text-align: center;
+
+        .achivments-bg {
+            padding: 50px 35px;
+        }
+    }
+}
+
+@include desktop {
+    .achivements .achivments-bg {
+        padding: 60px 50px;
+    }
+}
+
+@include desktop-lg {
+    .achivements .achivments-bg {
+        padding: 55px 44px;
+    }
+}
+
+// ///////////////
+.blogpost {
+    margin-bottom: 100px;
+
+    .blog {
+        .blog-details {
+            width: 75%;
+        }
+
+        .blog-date {
+            width: 15%;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 60px;
+                width: 1px;
+                background-color: $primary-color;
+            }
+
+            // border-left: 2px solid $primary-color;
+
+        }
+
+        &:last-child {
+            border-bottom: 0 !important;
+        }
+    }
+
+}
+
+@include mobile {
+    .blogpost {
+        text-align: center;
+
+        .blog {
+            .blog-details {
+                width: 100%;
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            .blog-date {
+                width: 100%;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@include tablet {
+    .blogpost {
+        text-align: center;
+
+        .blog {
+            .blog-details {
+                width: 100%;
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            .blog-date {
+                width: 100%;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@include desktop{
+    .blogpost .blog .blog-details p{
+        font-size: 14px;
+    }
+}
+@include desktop-xxl {
+    .blogpost .blog .blog-details {
+        width: 60%;
     }
 }
