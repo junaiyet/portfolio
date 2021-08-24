@@ -229,9 +229,9 @@
         content: "";
         position: absolute;
         left: 50%;
-        top: 0;
+        top: 35px;
         background-color: $primary-bg;
-        width: 50%;
+        width: 60%;
         height: 365px;
         transform: translateX(-50%);
         z-index: -1;
@@ -336,9 +336,7 @@
         padding-bottom: 55px;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: $white;
-        box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06);
-        border-radius: 8px;
+       
 
         .card-body {
             .card-title {
@@ -428,10 +426,11 @@
     }
 
     .block {
-        margin-bottom: 45px;
+        margin-bottom: 55px;
 
         &:last-child {
             border-bottom: 0;
+            margin-bottom: 0 !important;
         }
 
         span {
@@ -780,25 +779,11 @@ footer {
 
     .mobile-number {
         color: $secondery-text-color;
-    }
-
-    .list-inline {
-        margin-bottom: 85px;
-
-        .list-inline-item {
-            &:not(:last-child) {
-                margin-right: 30px;
+      
+            &:hover {
+                color: $primary-color !important;
             }
-
-            a {
-                color: $text-color !important;
-                transition: .4s;
-
-                &:hover {
-                    color: $primary-color !important;
-                }
-            }
-        }
+        
     }
 
     .footer-bottom {
@@ -812,22 +797,91 @@ footer {
         }
     }
 }
+.footer-links {
+    margin-bottom: 85px;
 
+    .list-inline-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        a {
+            color: $text-color !important;
+            transition: .4s;
+
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+    }
+}
 @include mobile {
     footer {
-        .list-inline {
+         h4 {
+            margin-bottom: 20px;
+        }
+    
+    }
+    .footer-links {
+          
+        margin-bottom: 30px;
+    
+    .list-inline-item {
+        a {
+            font-size: 14px;
+        }
 
-            .list-inline-item {
-                a {
-                    font-size: 14px;
-                }
-
-                &:not(:last-child) {
-                    margin-right: 15px;
-                }
-            }
-
+        &:not(:last-child) {
+            margin-right: 15px;
         }
     }
 
+}
+
+}
+@include tablet{
+    footer {
+        h4 {
+           margin-bottom: 25px;
+       }
+     
+   } 
+   .footer-links {
+         
+    margin-bottom: 40px;
+
+.list-inline-item {
+    a {
+        font-size: 14px;
+    }
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+}
+}
+@include desktop{
+    footer {
+        h4 {
+           margin-bottom: 30px;
+       }
+    
+   } 
+   .footer-links {
+         
+    margin-bottom: 50px;
+
+.list-inline-item {
+    a {
+        font-size: 16px;
+    }
+
+    &:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+}
 }

@@ -25,6 +25,9 @@ a:focus {
 .text-secondery{
     color: $tertiary-text-color !important;
 }
+.text-tertiary{
+    color: $text-color !important;
+}
 .title-shape{
     transform: translateX(60%);
 }
@@ -45,4 +48,10 @@ a:focus {
     .title-shape {
         transform: translateX(20%);
     } 
+}
+.radius-8{
+border-radius: 8px !important;
+}
+.shadow{
+    box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06) !important;
 }

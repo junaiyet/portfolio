@@ -134,7 +134,9 @@
 // ///////////////
 .blogpost {
     margin-bottom: 100px;
-
+    .blog-title-shape {
+        transform: translateX(20%);
+    }
     .blog {
         .blog-details {
             width: 75%;
@@ -156,7 +158,9 @@
             }
 
             // border-left: 2px solid $primary-color;
-
+            &:last-child {
+                border-bottom: 0 !important;
+            }
         }
 
         &:last-child {
@@ -169,7 +173,9 @@
 @include mobile {
     .blogpost {
         text-align: center;
-
+         .blog-title-shape {
+            transform: translateX(0%);
+        }
         .blog {
             .blog-details {
                 width: 100%;
@@ -191,7 +197,9 @@
 @include tablet {
     .blogpost {
         text-align: center;
-
+        .blog-title-shape {
+            transform: translateX(0%);
+        }
         .blog {
             .blog-details {
                 width: 100%;
@@ -211,12 +219,23 @@
     }
 }
 @include desktop{
-    .blogpost .blog .blog-details p{
-        font-size: 14px;
-    }
+    .blogpost{
+        .blog-title-shape {
+            transform: translateX(0%);
+        }
+        .blog .blog-details p{
+            font-size: 14px;
+        }
+    } 
+    
 }
 @include desktop-xxl {
-    .blogpost .blog .blog-details {
-        width: 60%;
+    .blogpost{
+        .blog-title-shape {
+            transform: translateX(15%);
+        }
+        .blog .blog-details {
+            width: 60%;
+        }
     }
 }
