@@ -58,52 +58,68 @@
                 line-height: 14px;
                 font-weight: 400;
                 transition: .4s;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            .active{
+                color: $primary-color;
             }
         }
     }
 }
 
 @include mobile {
-    .navigation .navbar-nav .nav-item .nav-link {
-        color: #222222;
-        padding-left: 0px;
-
-        line-height: 0px;
-        font-size: 14px;
-        font-weight: 400;
-        padding-bottom: -20px;
-        margin: 10px 0 !important;
-        text-align: center;
+    .navigation{
+        padding: 5px 10px;
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
+    
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
     }
 }
 @include tablet {
-    .navigation .navbar-nav .nav-item .nav-link {
-        color: #222222;
-        padding-left: 0px;
-        line-height: 0px;
-        font-size: 14px;
-        font-weight: 400;
-        padding-bottom: -20px;
-        margin: 10px 0 !important;
-        text-align: center;
-    }
+    .navigation{
+        padding: 5px 15px;
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+    } 
 }
 @include desktop {
-    .navigation .navbar-nav .nav-item .nav-link {
-        color: #222222;
-        padding-left: 0px;
-
-        line-height: 0px;
-        font-size: 14px;
-        font-weight: 400;
-        padding-bottom: -20px;
-        margin: 20px 0 !important;
-        text-align: center;
-    }
-    .navbar-toggler {
-        i{
-
-            font-size: 28px;
+    .navigation{
+        padding: 5px 20px;
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
+    
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 20px 0 !important;
+            text-align: center;
+        }
+        .navbar-toggler {
+            i{
+    
+                font-size: 28px;
+            }
         }
     }
+
 }

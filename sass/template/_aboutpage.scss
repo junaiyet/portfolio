@@ -1,0 +1,95 @@
+.about-hero {
+    margin-bottom: 190px;
+
+    .about-hero-img {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0%;
+            bottom: -55px;
+            background-color: $primary-bg;
+            width: 180px;
+            height: 180px;
+            z-index: -1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0%;
+            top: -55px;
+            background-color: $primary-bg;
+            width: 180px;
+            height: 180px;
+            z-index: -1;
+        }
+    }
+
+    .has-circle {
+
+        .circle-1 {
+            top: -450px;
+        }
+
+        .circle-2 {
+            top: -700px;
+            left: 5%;
+        }
+
+        .circle-3 {
+            left: 12%;
+            top: -400px;
+        }
+
+        .circle-4 {
+            top: -690px;
+        }
+
+        .circle-5 {
+            width: 111px;
+            height: 111px;
+            right: 0;
+            top: -350px;
+        }
+
+        .circle-6 {
+            top: -800px;
+        }
+    }
+}
+
+@include mobile {
+    .about-sign-img {
+        width: 70%;
+    }
+
+    .about-hero .about-hero-img::after {
+        display: none;
+    }
+    .about-hero .about-hero-img::before {
+        display: none;
+    }
+}
+// //////////////////////
+.about-social-logo{
+    .social-logo-img{
+       background-color: $primary-bg;
+        height: 100px;
+    }
+}
+// //////////////
+.achivements{
+    margin-bottom: 150px;
+    .achivments-bg{
+        background-color: $primary-bg;
+        padding: 75px 65px;
+        .achivments-block{
+            &:last-child{
+                border-bottom: none !important;
+                padding-bottom: 0 !important;
+            }
+        }
+    }
+}

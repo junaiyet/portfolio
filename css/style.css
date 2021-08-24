@@ -6,6 +6,7 @@ body {
   line-height: 30px;
   color: #222222;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 p,
@@ -85,7 +86,7 @@ h2,
 h3,
 .h3 {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 46px;
 }
 
 @media (max-width: 575.98px) {
@@ -141,6 +142,12 @@ h4,
 
 h5,
 .h5 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h6,
+.h6 {
   font-size: 20px;
   line-height: 20px;
 }
@@ -268,7 +275,18 @@ a:focus {
   transition: .4s;
 }
 
+.navigation .navbar-nav .nav-item .nav-link:hover {
+  color: #FF5733;
+}
+
+.navigation .navbar-nav .nav-item .active {
+  color: #FF5733;
+}
+
 @media (max-width: 575.98px) {
+  .navigation {
+    padding: 5px 10px;
+  }
   .navigation .navbar-nav .nav-item .nav-link {
     color: #222222;
     padding-left: 0px;
@@ -282,6 +300,9 @@ a:focus {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .navigation {
+    padding: 5px 15px;
+  }
   .navigation .navbar-nav .nav-item .nav-link {
     color: #222222;
     padding-left: 0px;
@@ -295,6 +316,9 @@ a:focus {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+  .navigation {
+    padding: 5px 20px;
+  }
   .navigation .navbar-nav .nav-item .nav-link {
     color: #222222;
     padding-left: 0px;
@@ -305,13 +329,13 @@ a:focus {
     margin: 20px 0 !important;
     text-align: center;
   }
-  .navbar-toggler i {
+  .navigation .navbar-toggler i {
     font-size: 28px;
   }
 }
 
 .hero-area {
-  padding-top: 200px;
+  padding-top: 205px;
 }
 
 .hero-area {
@@ -506,10 +530,13 @@ a:focus {
 
 .social-logo {
   margin-bottom: 120px;
+  text-align: center;
 }
 
 .social-logo .social-logo-img {
   margin-right: 10px;
+  max-width: 15%;
+  padding: 0 15px;
 }
 
 .social-logo .social-logo-img:last-child {
@@ -527,7 +554,7 @@ a:focus {
   left: 50%;
   top: 0;
   background-color: #F9F9F9;
-  width: 65%;
+  width: 50%;
   height: 365px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -702,12 +729,16 @@ a:focus {
 }
 
 .huge-experience .box p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
 }
 
 .huge-experience .block {
-  margin-bottom: 36px;
+  margin-bottom: 45px;
+}
+
+.huge-experience .block:last-child {
+  border-bottom: 0;
 }
 
 .huge-experience .block span {
@@ -932,9 +963,12 @@ a:focus {
   }
 }
 
+.projects {
+  margin-bottom: 120px;
+}
+
 .projects .card {
   position: relative;
-  margin-bottom: 120px;
 }
 
 .projects .card .card-img-overlay {
@@ -965,6 +999,9 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
+  .projects {
+    margin-bottom: 70px;
+  }
   .projects .card .breadcrumb .breadcrumb-item a {
     font-size: 14px;
     line-height: 14px;
@@ -972,6 +1009,9 @@ a:focus {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .projects {
+    margin-bottom: 80px;
+  }
   .projects .card .breadcrumb .breadcrumb-item a {
     font-size: 15px;
     line-height: 15px;
@@ -979,6 +1019,9 @@ a:focus {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+  .projects {
+    margin-bottom: 100px;
+  }
   .projects .card .breadcrumb .breadcrumb-item a {
     font-size: 16px;
     line-height: 16px;
@@ -1019,5 +1062,104 @@ footer .footer-bottom a {
 
 footer .footer-bottom a:hover {
   color: #FF5733 !important;
+}
+
+@media (max-width: 575.98px) {
+  footer .list-inline .list-inline-item a {
+    font-size: 14px;
+  }
+  footer .list-inline .list-inline-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.about-hero {
+  margin-bottom: 190px;
+}
+
+.about-hero .about-hero-img {
+  position: relative;
+}
+
+.about-hero .about-hero-img::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -55px;
+  background-color: #F9F9F9;
+  width: 180px;
+  height: 180px;
+  z-index: -1;
+}
+
+.about-hero .about-hero-img::before {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: -55px;
+  background-color: #F9F9F9;
+  width: 180px;
+  height: 180px;
+  z-index: -1;
+}
+
+.about-hero .has-circle .circle-1 {
+  top: -450px;
+}
+
+.about-hero .has-circle .circle-2 {
+  top: -700px;
+  left: 5%;
+}
+
+.about-hero .has-circle .circle-3 {
+  left: 12%;
+  top: -400px;
+}
+
+.about-hero .has-circle .circle-4 {
+  top: -690px;
+}
+
+.about-hero .has-circle .circle-5 {
+  width: 111px;
+  height: 111px;
+  right: 0;
+  top: -350px;
+}
+
+.about-hero .has-circle .circle-6 {
+  top: -800px;
+}
+
+@media (max-width: 575.98px) {
+  .about-sign-img {
+    width: 70%;
+  }
+  .about-hero .about-hero-img::after {
+    display: none;
+  }
+  .about-hero .about-hero-img::before {
+    display: none;
+  }
+}
+
+.about-social-logo .social-logo-img {
+  background-color: #F9F9F9;
+  height: 100px;
+}
+
+.achivements {
+  margin-bottom: 150px;
+}
+
+.achivements .achivments-bg {
+  background-color: #F9F9F9;
+  padding: 75px 65px;
+}
+
+.achivements .achivments-bg .achivments-block:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */

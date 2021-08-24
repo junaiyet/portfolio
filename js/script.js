@@ -56,6 +56,7 @@ $('.social-logo-slider').slick({
     dots: false,
     infinite: true,
     arrows: true,
+    autoplay:false,
     prevArrow:'<i class="fas fa-arrow-left prev-arrow"></i>',
     nextArrow:'<i class="fas fa-arrow-right next-arrow"></i>',
     speed: 300,
@@ -79,7 +80,7 @@ $('.social-logo-slider').slick({
           dots: false,
           infinite: true,
           arrows: false,
-          autoplay:false,
+          autoplay:true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -90,7 +91,7 @@ $('.social-logo-slider').slick({
           dots: false,
           infinite: true,
           arrows: false,
-          autoplay:false,
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -121,7 +122,7 @@ $('.social-logo-slider').slick({
       {
         breakpoint: 769,
         settings: {
-          autoplay: false,
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -129,7 +130,7 @@ $('.social-logo-slider').slick({
       {
         breakpoint: 576,
         settings: {
-          autoplay: false,
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
