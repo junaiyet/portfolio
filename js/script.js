@@ -1,3 +1,8 @@
+
+// new WOW().init();
+AOS.init();
+
+
 $(window).scroll(function () {
     if ($(window).scrollTop() > 0) {
       $(".navigation").addClass("fixed-manu")
