@@ -190,16 +190,20 @@
 .social-logo {
     margin-bottom: 120px;
     text-align: center;
-
+    
     .social-logo-img {
         margin-right: 10px;
         max-width: 15%;
         padding: 0 15px;
-
+        width: 100%;
+         
         &:last-child {
             margin-right: 0;
         }
     }
+
+
+
 }
 @include mobile{
     .social-logo {
