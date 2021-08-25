@@ -1,6 +1,5 @@
 
-// new WOW().init();
-AOS.init();
+
 
 
 $(window).scroll(function () {
