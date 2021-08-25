@@ -21,8 +21,9 @@
             margin-bottom: 60px;
         }
         input{
-            background-color: $primary-bg;
+            background-color: transparent;
             font-size: 14px;
+            width: 100%;
             &:focus-visible{
               outline: none;
 
@@ -59,7 +60,7 @@
             text-align: left !important;
         }
         &::after{
-            width: 103%;
+            width: 100%;
         }
         .contact-information{
             text-align: center;
@@ -87,5 +88,15 @@
         //     align-items: center;
         // }
 
+    }
+}
+@include tablet{
+    .contact::after {
+        width: 50%;
+    }
+}
+@include desktop{
+    .contact::after {
+        width: 50%;
     }
 }

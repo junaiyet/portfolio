@@ -1,6 +1,5 @@
-.fixd-manu {
+.fixed-manu {
     background-color: $white;
-//    position: fixed;
     .navbar-nav {
         .nav-item {
             .nav-link {
@@ -12,6 +11,8 @@
 
 .navigation {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     transition: .4s;
     color: black;
@@ -76,108 +77,83 @@
     }
 }
 
+
+
 @include mobile {
-    .fixd-manu{
+    .fixed-manu {
 
-        // padding-top: 20px !important;
+        padding: 5px 15px !important;
+
     }
-    .navigation{
-        // padding: 10px;
-        .navbar-nav {
-            background-color: $white;
-    
-            .nav-item{
-                &:last-child{
-                    padding-bottom: 20px;
-                }
-                .nav-link {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    padding-left: 0px;
-                    padding-right: 0;
-                    padding-bottom: 0px;
-                    text-align: center;
-                 
-                }
-            }
-    
-        }
-    } 
 
+    .navigation {
+        padding: 5px 15px;
+        background-color: $primary-bg;
+
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+    }
 }
 
-// @include mobile {
-//       .fixd-manu {
-//         //   display: none;
-//         //   padding-top: 5px !important;
-//         //   padding-top: 20px !important;
-//           // .navbar-nav{
-//               // }
-//             }
+@include tablet {
+    .fixed-manu {
 
-//             .navigation {
-//                 // position: fixed;
-//         // padding-top: 10px;
-//         // padding: 5px 10px;
-//         transition: .2s;
+        padding: 5px 15px !important;
+        background-color: $primary-bg;
 
-// .navbar-nav .nav-item .nav-link {
-//     color: #222222;
-//     padding-left: 0px;
-//     line-height: 0px;
-//     font-size: 14px;
-//     font-weight: 400;
-//     padding-bottom: -20px;
-//     margin: 10px 0 !important;
-//     text-align: center;
-// }
-//     }
-// }
+    }
 
-// @include tablet {
-//     .fixd-manu{
+    .navigation {
+        padding: 5px 15px;
 
-//             padding: 5px 15px !important;
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+    }
+}
 
-//     }
-//     .navigation {
-//         padding: 5px 15px;
+@include desktop {
+    .fixed-manu {
 
-//         .navbar-nav .nav-item .nav-link {
-//             color: #222222;
-//             padding-left: 0px;
-//             line-height: 0px;
-//             font-size: 14px;
-//             font-weight: 400;
-//             padding-bottom: -20px;
-//             margin: 10px 0 !important;
-//             text-align: center;
-//         }
-//     }
-// }
+        padding: 5px 15px !important;
+        background-color: $primary-bg;
 
-// @include desktop {
-//     .navigation {
-//         padding: 5px 20px;
+    }
+    .navigation {
+        padding: 5px 20px;
+        .navbar-nav .nav-item .nav-link {
+            color: #222222;
+            padding-left: 0px;
 
-//         .navbar-nav .nav-item .nav-link {
-//             color: #222222;
-//             padding-left: 0px;
+            line-height: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: -20px;
+            margin: 20px 0 !important;
+            text-align: center;
+        }
 
-//             line-height: 0px;
-//             font-size: 14px;
-//             font-weight: 400;
-//             padding-bottom: -20px;
-//             margin: 20px 0 !important;
-//             text-align: center;
-//         }
+        .navbar-toggler {
+            i {
 
-//         .navbar-toggler {
-//             i {
+                font-size: 28px;
+            }
+        }
+    }
 
-//                 font-size: 28px;
-//             }
-//         }
-//     }
-
-// }
+}
