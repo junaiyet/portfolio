@@ -15,6 +15,13 @@ p,
   color: #888888 !important;
 }
 
+@media (max-width: 575.98px) {
+  p,
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -44,7 +51,7 @@ h1,
 @media (min-width: 576px) and (max-width: 768px) {
   h1,
   .h1 {
-    font-size: 32px;
+    font-size: 34px;
     line-height: 40px;
   }
 }
@@ -358,6 +365,7 @@ a:focus {
 @media (max-width: 575.98px) {
   .fixed-manu {
     padding: 5px 15px !important;
+    background-color: #F9F9F9;
   }
   .navigation {
     padding: 5px 15px;
@@ -381,6 +389,7 @@ a:focus {
     background-color: #F9F9F9;
   }
   .navigation {
+    background-color: #F9F9F9;
     padding: 5px 15px;
   }
   .navigation .navbar-nav .nav-item .nav-link {
@@ -576,6 +585,7 @@ a:focus {
 @media (max-width: 575.98px) {
   .hero-area {
     padding-top: 130px;
+    margin-bottom: 80px;
   }
   .has-circle {
     display: none;
@@ -592,17 +602,8 @@ a:focus {
   .hero-area p {
     margin: 0 0 30px 0;
   }
-  .has-circle .circle-1 svg {
-    width: 100px;
-    height: 300px;
-  }
-  .has-circle .circle-5 {
-    right: 5%;
-  }
-  .has-circle .circle-6 svg {
-    width: 90px;
-    height: 180px;
-    top: -250px;
+  .has-circle {
+    display: none;
   }
 }
 
@@ -625,6 +626,19 @@ a:focus {
 
 .social-logo .social-logo-img:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 575.98px) {
+  .social-logo {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .social-logo {
+    margin-bottom: 70px;
+    text-align: center;
+  }
 }
 
 .global-network {
@@ -765,7 +779,7 @@ a:focus {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .providing-services {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   .providing-services::after {
     display: none;
@@ -830,6 +844,7 @@ a:focus {
 @media (max-width: 575.98px) {
   .huge-experience {
     text-align: center;
+    margin-bottom: 70px;
   }
   .huge-experience .experience-title-shape {
     -webkit-transform: translateX(0%);
@@ -857,6 +872,7 @@ a:focus {
 @media (min-width: 576px) and (max-width: 768px) {
   .huge-experience {
     text-align: center;
+    margin-bottom: 90px;
   }
   .huge-experience h2 {
     font-size: 30px;
@@ -876,6 +892,7 @@ a:focus {
 @media (min-width: 769px) and (max-width: 991.98px) {
   .huge-experience {
     text-align: center;
+    margin-bottom: 70px;
   }
   .huge-experience h2 {
     font-size: 36px;
@@ -967,6 +984,7 @@ a:focus {
 
 @media (max-width: 575.98px) {
   .tstimonial {
+    margin-bottom: 80px;
     text-align: center;
   }
   .tstimonial .quotation {
@@ -984,6 +1002,7 @@ a:focus {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .tstimonial {
+    margin-bottom: 90px;
     text-align: center;
   }
   .tstimonial .quotation {
@@ -1103,9 +1122,11 @@ a:focus {
   .projects {
     margin-bottom: 70px;
   }
-  .projects .card .breadcrumb .breadcrumb-item a {
-    font-size: 14px;
-    line-height: 14px;
+  .projects .card .card-img-overlay {
+    padding: 0px !important;
+  }
+  .projects .card .card-body {
+    padding-bottom: 10px !important;
   }
 }
 
@@ -1274,6 +1295,9 @@ footer .footer-bottom a:hover {
 }
 
 @media (max-width: 575.98px) {
+  .about-hero {
+    margin-bottom: 70px;
+  }
   .about-sign-img {
     width: 70%;
   }
@@ -1282,6 +1306,18 @@ footer .footer-bottom a:hover {
   }
   .about-hero .about-hero-img::before {
     display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .about-hero {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .about-hero {
+    margin-bottom: 90px;
   }
 }
 
@@ -1305,6 +1341,9 @@ footer .footer-bottom a:hover {
 }
 
 @media (max-width: 575.98px) {
+  .social-logo {
+    margin-bottom: 70px;
+  }
   .achivements {
     text-align: center;
   }
@@ -1315,6 +1354,7 @@ footer .footer-bottom a:hover {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .achivements {
+    margin-bottom: 90px;
     text-align: center;
   }
   .achivements .achivments-bg {
@@ -1323,6 +1363,9 @@ footer .footer-bottom a:hover {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+  .achivements {
+    margin-bottom: 90px;
+  }
   .achivements .achivments-bg {
     padding: 60px 50px;
   }
@@ -1374,6 +1417,7 @@ footer .footer-bottom a:hover {
 
 @media (max-width: 575.98px) {
   .blogpost {
+    margin-bottom: 35px;
     text-align: center;
   }
   .blogpost .blog-title-shape {
@@ -1397,6 +1441,7 @@ footer .footer-bottom a:hover {
 @media (min-width: 576px) and (max-width: 768px) {
   .blogpost {
     text-align: center;
+    margin-bottom: 60px;
   }
   .blogpost .blog-title-shape {
     -webkit-transform: translateX(0%);
@@ -1417,12 +1462,12 @@ footer .footer-bottom a:hover {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+  .blogpost {
+    margin-bottom: 70px;
+  }
   .blogpost .blog-title-shape {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-  }
-  .blogpost .blog .blog-details p {
-    font-size: 14px;
   }
 }
 
@@ -1517,12 +1562,20 @@ footer .footer-bottom a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .contact {
+    padding-top: 160px;
+    padding-bottom: 55px;
+  }
   .contact::after {
     width: 50%;
   }
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+  .contact {
+    padding-top: 175px;
+    padding-bottom: 75px;
+  }
   .contact::after {
     width: 50%;
   }

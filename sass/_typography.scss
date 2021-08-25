@@ -15,7 +15,12 @@ p,
     font-weight: 400;
     color: $secondery-text-color !important;
 }
-
+@include mobile{
+    p,
+    .paragraph {
+     font-size: 16px;
+    } 
+}
 h1,
 h2,
 h3,
@@ -47,7 +52,7 @@ h1,
 
     h1,
     .h1 {
-        font-size: 32px;
+        font-size: 34px;
         line-height: 40px;
     }
 }

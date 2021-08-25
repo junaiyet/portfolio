@@ -61,6 +61,10 @@
 }
 
 @include mobile {
+    .about-hero {
+        margin-bottom: 70px;
+        
+    }
     .about-sign-img {
         width: 70%;
     }
@@ -73,7 +77,16 @@
         display: none;
     }
 }
-
+@include tablet{
+    .about-hero {
+        margin-bottom: 90px;
+    }
+}
+@include desktop{
+    .about-hero {
+        margin-bottom: 90px;
+    }
+}
 // //////////////////////
 .about-social-logo {
     .social-logo-img {
@@ -100,6 +113,9 @@
 }
 
 @include mobile {
+    .social-logo {
+        margin-bottom: 70px;
+    }
     .achivements {
         text-align: center;
 
@@ -111,6 +127,7 @@
 
 @include tablet {
     .achivements {
+            margin-bottom: 90px;
         text-align: center;
 
         .achivments-bg {
@@ -120,9 +137,13 @@
 }
 
 @include desktop {
-    .achivements .achivments-bg {
-        padding: 60px 50px;
-    }
+    .achivements{
+            margin-bottom: 90px;
+            .achivments-bg {
+                padding: 60px 50px;
+            }
+    } 
+  
 }
 
 @include desktop-lg {
@@ -172,6 +193,7 @@
 
 @include mobile {
     .blogpost {
+        margin-bottom: 35px;
         text-align: center;
          .blog-title-shape {
             transform: translateX(0%);
@@ -197,6 +219,7 @@
 @include tablet {
     .blogpost {
         text-align: center;
+            margin-bottom: 60px;
         .blog-title-shape {
             transform: translateX(0%);
         }
@@ -220,12 +243,11 @@
 }
 @include desktop{
     .blogpost{
+        margin-bottom: 70px;
         .blog-title-shape {
             transform: translateX(0%);
         }
-        .blog .blog-details p{
-            font-size: 14px;
-        }
+    
     } 
     
 }

@@ -21,7 +21,7 @@ $('.social-logo-slider').slick({
       breakpoint: 991,
 
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         infinite: true,
@@ -44,7 +44,7 @@ $('.social-logo-slider').slick({
         dots: false,
         infinite: true,
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
@@ -103,7 +103,7 @@ $('.social-logo-slider').slick({
     dots: false,
     infinite: true,
     arrows: false,
-    autoplay:true,
+    autoplay:false,
     fade:true,
     speed: 300,
     slidesToShow: 1,

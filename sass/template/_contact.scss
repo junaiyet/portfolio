@@ -91,12 +91,22 @@
     }
 }
 @include tablet{
-    .contact::after {
-        width: 50%;
+    .contact{
+        padding-top: 160px;
+        padding-bottom: 55px;
+        &::after {
+            width: 50%;
+        } 
     }
+        
+
 }
 @include desktop{
-    .contact::after {
-        width: 50%;
+    .contact {
+        padding-top: 175px;
+        padding-bottom: 75px;
+        &::after {
+            width: 50%;
+        }
     }
 }
