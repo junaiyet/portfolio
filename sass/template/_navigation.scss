@@ -1,6 +1,6 @@
 .fixd-manu {
     background-color: $white;
-
+//    position: fixed;
     .navbar-nav {
         .nav-item {
             .nav-link {
@@ -77,62 +77,107 @@
 }
 
 @include mobile {
-    .navigation {
-        padding: 5px 10px;
+    .fixd-manu{
 
-        .navbar-nav .nav-item .nav-link {
-            color: #222222;
-            padding-left: 0px;
-
-            line-height: 0px;
-            font-size: 14px;
-            font-weight: 400;
-            padding-bottom: -20px;
-            margin: 10px 0 !important;
-            text-align: center;
-        }
+        // padding-top: 20px !important;
     }
-}
-
-@include tablet {
-    .navigation {
-        padding: 5px 15px;
-
-        .navbar-nav .nav-item .nav-link {
-            color: #222222;
-            padding-left: 0px;
-            line-height: 0px;
-            font-size: 14px;
-            font-weight: 400;
-            padding-bottom: -20px;
-            margin: 10px 0 !important;
-            text-align: center;
-        }
-    }
-}
-
-@include desktop {
-    .navigation {
-        padding: 5px 20px;
-
-        .navbar-nav .nav-item .nav-link {
-            color: #222222;
-            padding-left: 0px;
-
-            line-height: 0px;
-            font-size: 14px;
-            font-weight: 400;
-            padding-bottom: -20px;
-            margin: 20px 0 !important;
-            text-align: center;
-        }
-
-        .navbar-toggler {
-            i {
-
-                font-size: 28px;
+    .navigation{
+        // padding: 10px;
+        .navbar-nav {
+            background-color: $white;
+    
+            .nav-item{
+                &:last-child{
+                    padding-bottom: 20px;
+                }
+                .nav-link {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding-left: 0px;
+                    padding-right: 0;
+                    padding-bottom: 0px;
+                    text-align: center;
+                 
+                }
             }
+    
         }
-    }
+    } 
 
 }
+
+// @include mobile {
+//       .fixd-manu {
+//         //   display: none;
+//         //   padding-top: 5px !important;
+//         //   padding-top: 20px !important;
+//           // .navbar-nav{
+//               // }
+//             }
+
+//             .navigation {
+//                 // position: fixed;
+//         // padding-top: 10px;
+//         // padding: 5px 10px;
+//         transition: .2s;
+
+// .navbar-nav .nav-item .nav-link {
+//     color: #222222;
+//     padding-left: 0px;
+//     line-height: 0px;
+//     font-size: 14px;
+//     font-weight: 400;
+//     padding-bottom: -20px;
+//     margin: 10px 0 !important;
+//     text-align: center;
+// }
+//     }
+// }
+
+// @include tablet {
+//     .fixd-manu{
+
+//             padding: 5px 15px !important;
+
+//     }
+//     .navigation {
+//         padding: 5px 15px;
+
+//         .navbar-nav .nav-item .nav-link {
+//             color: #222222;
+//             padding-left: 0px;
+//             line-height: 0px;
+//             font-size: 14px;
+//             font-weight: 400;
+//             padding-bottom: -20px;
+//             margin: 10px 0 !important;
+//             text-align: center;
+//         }
+//     }
+// }
+
+// @include desktop {
+//     .navigation {
+//         padding: 5px 20px;
+
+//         .navbar-nav .nav-item .nav-link {
+//             color: #222222;
+//             padding-left: 0px;
+
+//             line-height: 0px;
+//             font-size: 14px;
+//             font-weight: 400;
+//             padding-bottom: -20px;
+//             margin: 20px 0 !important;
+//             text-align: center;
+//         }
+
+//         .navbar-toggler {
+//             i {
+
+//                 font-size: 28px;
+//             }
+//         }
+//     }
+
+// }

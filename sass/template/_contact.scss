@@ -38,4 +38,54 @@
             font-weight: 500px;
         }
     }
+    .social-links{
+             .social-item{
+                 a{
+                     i{
+
+                         font-size: 20px !important;
+                     }
+                 }
+             }
+    }
+}
+
+@include mobile{
+    .contact{
+        padding-top: 125px;
+        padding-bottom: 45px;
+        // text-align: center;
+        h6{
+            text-align: left !important;
+        }
+        &::after{
+            width: 103%;
+        }
+        .contact-information{
+            text-align: center;
+        }
+        .contact-paragraph{
+            text-align: center;
+        }
+        .social-contacts{
+            text-align: center;
+        }
+        .social-links{
+            text-align: center;
+        }
+      form
+        {
+            button{
+                width: 100%;
+                // text-align: center;
+                // transform: translate(50%);
+            }
+        }
+        // .btn{
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+
+    }
 }

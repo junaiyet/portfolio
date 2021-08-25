@@ -354,53 +354,19 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
-  .navigation {
-    padding: 5px 10px;
+  .navigation .navbar-nav {
+    background-color: #fff;
+  }
+  .navigation .navbar-nav .nav-item:last-child {
+    padding-bottom: 20px;
   }
   .navigation .navbar-nav .nav-item .nav-link {
-    color: #222222;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 0px;
-    line-height: 0px;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: -20px;
-    margin: 10px 0 !important;
+    padding-right: 0;
+    padding-bottom: 0px;
     text-align: center;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .navigation {
-    padding: 5px 15px;
-  }
-  .navigation .navbar-nav .nav-item .nav-link {
-    color: #222222;
-    padding-left: 0px;
-    line-height: 0px;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: -20px;
-    margin: 10px 0 !important;
-    text-align: center;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 991.98px) {
-  .navigation {
-    padding: 5px 20px;
-  }
-  .navigation .navbar-nav .nav-item .nav-link {
-    color: #222222;
-    padding-left: 0px;
-    line-height: 0px;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: -20px;
-    margin: 20px 0 !important;
-    text-align: center;
-  }
-  .navigation .navbar-toggler i {
-    font-size: 28px;
   }
 }
 
@@ -1467,5 +1433,37 @@ footer .footer-bottom a:hover {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500px;
+}
+
+.contact .social-links .social-item a i {
+  font-size: 20px !important;
+}
+
+@media (max-width: 575.98px) {
+  .contact {
+    padding-top: 125px;
+    padding-bottom: 45px;
+  }
+  .contact h6 {
+    text-align: left !important;
+  }
+  .contact::after {
+    width: 103%;
+  }
+  .contact .contact-information {
+    text-align: center;
+  }
+  .contact .contact-paragraph {
+    text-align: center;
+  }
+  .contact .social-contacts {
+    text-align: center;
+  }
+  .contact .social-links {
+    text-align: center;
+  }
+  .contact form button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
