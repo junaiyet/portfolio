@@ -1,3 +1,63 @@
+.preloder {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:99999;
+    background:$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    .dots {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+    .dot {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+      }
+    .dot1 .dot:nth-child(1) {
+        animation-delay: 0s;
+      }
+      
+      .dot1 .dot:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      
+      .dot1 .dot:nth-child(3) {
+        animation-delay: 0.8s;
+      }
+      
+      .dot1 .dot {
+        border-radius: 50%;
+        animation: topDown2 1.2s linear forwards infinite;
+      }
+    @keyframes topDown2 {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+      
+        25% {
+          transform: translateY(20px);
+          background-color: orange;
+        }
+      
+        75% {
+          transform: translateY(-20px);
+          background-color: red;
+        }
+      }
+  }
+
 .hero-area {
     padding-top: 205px;
 }

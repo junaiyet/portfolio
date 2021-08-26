@@ -142,3 +142,6 @@ $('.social-logo-slider').slick({
     
     ]
   });
+  setTimeout(function(){
+    $(".preloder").fadeOut()
+},3000)
