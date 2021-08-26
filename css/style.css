@@ -239,6 +239,15 @@ a:focus {
   text-decoration: none;
 }
 
+a {
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+a:hover {
+  color: #FF5733 !important;
+}
+
 .text-primary {
   color: #FF5733 !important;
 }
@@ -327,6 +336,10 @@ a:focus {
   line-height: 50px;
   margin-right: 10px;
   font-size: 20px;
+}
+
+.navigation .navbar-brand:hover {
+  color: #222222 !important;
 }
 
 .navigation .navbar-toggler {
@@ -1059,6 +1072,14 @@ a:focus {
   line-height: 50px;
   color: #AAAAAA;
   font-size: 20px;
+  -webkit-transform: .4s;
+          transform: .4s;
+}
+
+.testimonial .testimonial-left-slider .prev-arrow:hover {
+  background-color: #FF5733;
+  color: #222222;
+  cursor: pointer;
 }
 
 .testimonial .testimonial-left-slider .next-arrow {
@@ -1073,6 +1094,14 @@ a:focus {
   line-height: 50px;
   color: #AAAAAA;
   font-size: 20px;
+  -webkit-transform: .4s;
+          transform: .4s;
+}
+
+.testimonial .testimonial-left-slider .next-arrow:hover {
+  background-color: #FF5733;
+  color: #222222;
+  cursor: pointer;
 }
 
 @media (max-width: 575.98px) {

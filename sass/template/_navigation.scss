@@ -36,6 +36,9 @@
             margin-right: 10px;
             font-size: 20px;
         }
+        &:hover{
+            color: $text-color !important;
+        }
     }
 
     .navbar-toggler {

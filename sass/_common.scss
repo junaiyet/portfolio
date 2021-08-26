@@ -19,6 +19,12 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
+a{
+    transition: .4s;
+    &:hover{
+        color: $primary-color !important;
+    }
+}
 .text-primary{
     color: $primary-color !important;
 }
