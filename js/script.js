@@ -144,4 +144,10 @@ $('.social-logo-slider').slick({
   });
   setTimeout(function(){
     $(".preloder").fadeOut()
-},3000)
+},3000);
+
+
+  new WOW().init();
+
+
+
