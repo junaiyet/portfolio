@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index:99999;
-    background:$primary-color;
+    background:$white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@
 
 }
 
-.btn {
+.btn { 
     padding: 18px 40px;
     border-radius: 50px;
     background-color: $primary-color;
@@ -75,10 +75,12 @@
     color: $white;
     transition: .4s;
 
+
     &:hover {
         background-color: $white;
         color: $text-color;
-        border: 1px solid $primary-color;
+        border: 1px solid $primary-color;    
+            box-shadow: 0 .25rem .25rem .125rem rgba(253,86,49,.1),0 .375rem .75rem -0.125rem rgba(253,86,49,.4);
     }
 }
 

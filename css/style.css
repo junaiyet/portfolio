@@ -438,7 +438,7 @@ a:focus {
   top: 0;
   left: 0;
   z-index: 99999;
-  background: #FF5733;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,6 +550,8 @@ a:focus {
   background-color: #fff;
   color: #222222;
   border: 1px solid #FF5733;
+  -webkit-box-shadow: 0 0.25rem 0.25rem 0.125rem rgba(253, 86, 49, 0.1), 0 0.375rem 0.75rem -0.125rem rgba(253, 86, 49, 0.4);
+          box-shadow: 0 0.25rem 0.25rem 0.125rem rgba(253, 86, 49, 0.1), 0 0.375rem 0.75rem -0.125rem rgba(253, 86, 49, 0.4);
 }
 
 .hero-main {
