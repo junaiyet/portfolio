@@ -861,6 +861,13 @@ a:hover {
 .providing-services .card {
   padding-top: 53px;
   padding-bottom: 55px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.providing-services .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .providing-services .card .card-body .card-title {
