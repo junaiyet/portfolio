@@ -56,7 +56,7 @@ $('.social-logo-slider').slick({
   ]
 });
   // /////////////////
-  $('.tstimonial-left-slider').slick({
+  $('.testimonial-left-slider').slick({
     dots: false,
     infinite: true,
     arrows: true,
@@ -66,7 +66,7 @@ $('.social-logo-slider').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.tstimonial-right-slider',
+    asNavFor: '.testimonial-right-slider',
     responsive: [
       {
         breakpoint: 991,
@@ -103,7 +103,7 @@ $('.social-logo-slider').slick({
     
     ]
   });
-  $('.tstimonial-right-slider').slick({
+  $('.testimonial-right-slider').slick({
     dots: false,
     infinite: true,
     arrows: false,
@@ -112,7 +112,7 @@ $('.social-logo-slider').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.tstimonial-left-slider',
+    asNavFor: '.testimonial-left-slider',
     responsive: [
       {
         breakpoint: 991,

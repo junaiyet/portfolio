@@ -251,6 +251,10 @@ a:focus {
   color: #222222 !important;
 }
 
+.bg-primary {
+  background-color: #F9F9F9 !important;
+}
+
 .title-shape {
   -webkit-transform: translateX(60%);
           transform: translateX(60%);
@@ -923,39 +927,31 @@ a:focus {
   }
 }
 
-.tstimonial {
+.testimonial {
   margin-bottom: 160px;
   position: relative;
 }
 
-.tstimonial::after {
-  position: absolute;
-  content: "";
-  background-color: #F9F9F9;
-  width: 90%;
-  left: 50%;
-  bottom: -65px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 650px;
-  z-index: -1;
+.testimonial .bg-primary {
+  padding-top: 32px;
+  padding-bottom: 80px;
 }
 
-.tstimonial .tstimonial-left-slider .img {
+.testimonial .testimonial-left-slider .img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
 
-.tstimonial .tstimonial-left-slider p {
+.testimonial .testimonial-left-slider p {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 30px;
 }
 
-.tstimonial .tstimonial-left-slider .prev-arrow {
+.testimonial .testimonial-left-slider .prev-arrow {
   position: absolute;
   bottom: -70px;
-  left: 13%;
+  left: 11%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -966,10 +962,10 @@ a:focus {
   font-size: 20px;
 }
 
-.tstimonial .tstimonial-left-slider .next-arrow {
+.testimonial .testimonial-left-slider .next-arrow {
   position: absolute;
   bottom: -70px;
-  left: 24%;
+  left: 22%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -981,17 +977,17 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
-  .tstimonial {
+  .testimonial {
     margin-bottom: 80px;
     text-align: center;
   }
-  .tstimonial .quotation {
+  .testimonial .quotation {
     display: none;
   }
-  .tstimonial::after {
-    display: none;
+  .testimonial .bg-primary {
+    background-color: transparent !important;
   }
-  .tstimonial .tstimonial-left-slider p {
+  .testimonial .testimonial-left-slider p {
     font-size: 14px;
     line-height: 28px;
     margin-left: 0 !important;
@@ -999,17 +995,17 @@ a:focus {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .tstimonial {
+  .testimonial {
     margin-bottom: 90px;
     text-align: center;
   }
-  .tstimonial .quotation {
+  .testimonial .quotation {
     display: none;
   }
-  .tstimonial::after {
-    display: none;
+  .testimonial .bg-primary {
+    background-color: transparent !important;
   }
-  .tstimonial .tstimonial-left-slider p {
+  .testimonial .testimonial-left-slider p {
     font-size: 14px;
     line-height: 28px;
     margin-left: 0 !important;
@@ -1017,47 +1013,32 @@ a:focus {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .tstimonial::after {
-    width: 95%;
-    height: 450px;
+  .testimonial .bg-primary {
+    padding-top: 0px;
+    padding-bottom: 50px;
   }
-  .tstimonial .tstimonial-left-slider .quotation {
+  .testimonial .testimonial-left-slider .quotation {
     width: 40px !important;
     height: 40px !important;
   }
-  .tstimonial .tstimonial-left-slider p {
+  .testimonial .testimonial-left-slider p {
     font-size: 14px;
     line-height: 22px;
   }
-  .tstimonial .tstimonial-left-slider .prev-arrow {
+  .testimonial .testimonial-left-slider .prev-arrow {
     bottom: -50px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
   }
-  .tstimonial .tstimonial-left-slider .next-arrow {
+  .testimonial .testimonial-left-slider .next-arrow {
     left: 30%;
     bottom: -50px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .tstimonial::after {
-    position: absolute;
-    content: "";
-    background-color: #F9F9F9;
-    width: 95%;
-    left: 50%;
-    bottom: -65px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    height: 740px;
-    z-index: -1;
   }
 }
 

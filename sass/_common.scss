@@ -28,6 +28,9 @@ a:focus {
 .text-tertiary{
     color: $text-color !important;
 }
+.bg-primary{
+    background-color: $primary-bg !important;
+}
 .title-shape{
     transform: translateX(60%);
 }
