@@ -8,8 +8,21 @@ $(window).scroll(function () {
     } else {
       $(".navigation").removeClass("fixed-manu")
     }
+    if($(window).scrollTop() > 1000){
+      $(".backtotop").fadeIn()
+    }else{
+      $(".backtotop").fadeOut()
+    }
   
   })
+  
+  $(".backtotop").click(function(){
+    $("html,body").animate({
+      scrollTop:0,
+    })
+    
+  })
+  
 // //////////////////
 $('.social-logo-slider').slick({
   dots: false,
