@@ -58,14 +58,7 @@
       }
   }
 
-.hero-area {
-    padding-top: 205px;
-}
 
-.hero-area {
-    margin-bottom: 100px;
-
-}
 
 .btn { 
     padding: 18px 40px;
@@ -239,7 +232,31 @@
         display: none;
     }
 }
+@include desktop{
+    .has-circle{
+        .circle-1{
+            top: 180px;
+            svg{
+                width: 100px;
+                height: 180px;
+            }
+        }
+        .circle-3 {
 
+            top: 50px;
+        }
+        .circle-5 {
+            right: 10%;
+            top: 179px;
+        }
+        .circle-6 {
+            svg{
+                width: 100px;
+                height: 180px;
+            }
+          }
+    }
+}
 @include desktop-lg {
     .hero-area {
         h1 {
@@ -249,11 +266,10 @@
 }
 
 // /////////////
-.social-logo {
-    margin-bottom: 120px;
+.brand-logo {
     text-align: center;
     
-    .social-logo-img {
+    .brand-logo-img {
         margin-right: 10px;
         max-width: 15%;
         padding: 0 15px;
@@ -266,12 +282,12 @@
 
 }
 @include mobile{
-    .social-logo {
+    .brand-logo {
         margin-bottom: 65px;
     }
 }
 @include desktop{
-    .social-logo {
+    .brand-logo {
       
             margin-bottom: 70px;
             text-align: center;
@@ -283,29 +299,19 @@
 // //////////
 .global-network {
     position: relative;
-    margin-bottom: 160px;
-
-    &::after {
+    padding: 88px 0;
+     &::after {
         content: "";
         position: absolute;
         left: 50%;
-        top: 35px;
+        top: 50%;
         background-color: $primary-bg;
         width: 60%;
-        height: 365px;
-        transform: translateX(-50%);
+        height: 100%;
+        transform: translate(-50%,-50%);
         z-index: -1;
     }
 
-    h2 {
-        padding-top: 88px;
-        padding-bottom: 88px;
-    }
-
-    p {
-        padding-top: 88px;
-        padding-bottom: 88px;
-    }
 }
 
 @include mobile {
@@ -375,14 +381,13 @@
 
 // ////////////
 .providing-services {
-    margin-bottom: 240px;
     position: relative;
-
+      padding-bottom: 80px;
     &::after {
         content: "";
         position: absolute;
         left: 50%;
-        bottom: -80px;
+        bottom: 0px;
         width: 90%;
         height: 260px;
         transform: translateX(-50%);
@@ -395,9 +400,7 @@
         padding-top: 53px;
         padding-bottom: 55px;
         transition: .6s;
-      &:hover{
-          transform: scale(.9);
-      }
+
         .card-body {
             .card-title {
                 margin-bottom: 20px;
@@ -455,7 +458,6 @@
 
 
 .huge-experience {
-    margin-bottom: 160px;
 
 
     .experience-title-shape {
@@ -604,7 +606,6 @@
 }
 
 .testimonial {
-    margin-bottom: 160px;
     position: relative;
    .bg-primary{
        padding-top: 32px;

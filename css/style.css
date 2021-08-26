@@ -299,6 +299,19 @@ a:hover {
           box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06) !important;
 }
 
+.section-sm {
+  margin-bottom: 100px;
+  margin-top: 210px;
+}
+
+.section-md {
+  margin-bottom: 120px;
+}
+
+.section {
+  margin-bottom: 160px;
+}
+
 .fixed-manu {
   background-color: #fff;
 }
@@ -427,6 +440,7 @@ a:hover {
     background-color: #F9F9F9;
   }
   .navigation {
+    background-color: #F9F9F9;
     padding: 5px 20px;
   }
   .navigation .navbar-nav .nav-item .nav-link {
@@ -539,14 +553,6 @@ a:hover {
             transform: translateY(-20px);
     background-color: red;
   }
-}
-
-.hero-area {
-  padding-top: 205px;
-}
-
-.hero-area {
-  margin-bottom: 100px;
 }
 
 .btn {
@@ -723,35 +729,55 @@ a:hover {
   }
 }
 
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .has-circle .circle-1 {
+    top: 180px;
+  }
+  .has-circle .circle-1 svg {
+    width: 100px;
+    height: 180px;
+  }
+  .has-circle .circle-3 {
+    top: 50px;
+  }
+  .has-circle .circle-5 {
+    right: 10%;
+    top: 179px;
+  }
+  .has-circle .circle-6 svg {
+    width: 100px;
+    height: 180px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-area h1 {
     margin: 0 -50px;
   }
 }
 
-.social-logo {
-  margin-bottom: 120px;
+.brand-logo {
   text-align: center;
 }
 
-.social-logo .social-logo-img {
+.brand-logo .brand-logo-img {
   margin-right: 10px;
   max-width: 15%;
   padding: 0 15px;
 }
 
-.social-logo .social-logo-img:last-child {
+.brand-logo .brand-logo-img:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575.98px) {
-  .social-logo {
+  .brand-logo {
     margin-bottom: 65px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .social-logo {
+  .brand-logo {
     margin-bottom: 70px;
     text-align: center;
   }
@@ -759,30 +785,20 @@ a:hover {
 
 .global-network {
   position: relative;
-  margin-bottom: 160px;
+  padding: 88px 0;
 }
 
 .global-network::after {
   content: "";
   position: absolute;
   left: 50%;
-  top: 35px;
+  top: 50%;
   background-color: #F9F9F9;
   width: 60%;
-  height: 365px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: -1;
-}
-
-.global-network h2 {
-  padding-top: 88px;
-  padding-bottom: 88px;
-}
-
-.global-network p {
-  padding-top: 88px;
-  padding-bottom: 88px;
 }
 
 @media (max-width: 575.98px) {
@@ -841,15 +857,15 @@ a:hover {
 }
 
 .providing-services {
-  margin-bottom: 240px;
   position: relative;
+  padding-bottom: 80px;
 }
 
 .providing-services::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -80px;
+  bottom: 0px;
   width: 90%;
   height: 260px;
   -webkit-transform: translateX(-50%);
@@ -863,11 +879,6 @@ a:hover {
   padding-bottom: 55px;
   -webkit-transition: .6s;
   transition: .6s;
-}
-
-.providing-services .card:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .providing-services .card .card-body .card-title {
@@ -914,10 +925,6 @@ a:hover {
   .providing-services::after {
     display: none;
   }
-}
-
-.huge-experience {
-  margin-bottom: 160px;
 }
 
 .huge-experience .experience-title-shape {
@@ -1047,7 +1054,6 @@ a:hover {
 }
 
 .testimonial {
-  margin-bottom: 160px;
   position: relative;
 }
 

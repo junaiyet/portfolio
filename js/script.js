@@ -24,7 +24,7 @@ $(window).scroll(function () {
   })
   
 // //////////////////
-$('.social-logo-slider').slick({
+$('.brand-logo-slider').slick({
   dots: false,
   infinite: true,
   arrows: false,
