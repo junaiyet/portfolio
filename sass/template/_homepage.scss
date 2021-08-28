@@ -100,46 +100,46 @@
     }
 }
 
-.radius {
+.shape {
     position: absolute;
 }
 
-.radius-1 {
+.shape-1 {
     left: calc(50% - 60px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
-.radius-2 {
+.shape-2 {
     left: calc(50% - 60px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -2;
 }
 
-.radius-3 {
+.shape-3 {
     left: calc(50% - 91px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -3;
 }
 
-.radius-4 {
+.shape-4 {
     right: calc(50% - 90px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
-.radius-5 {
+.shape-5 {
     right: calc(50% - 130px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -2;
 }
 
-.radius-6 {
+.shape-6 {
     right: calc(50% - 130px);
     top: 50%;
     transform: translate(-50%, -50%);

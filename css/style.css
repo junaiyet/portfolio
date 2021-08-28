@@ -269,6 +269,22 @@ a:hover {
           transform: translateX(60%);
 }
 
+.radius {
+  border-radius: 8px;
+}
+
+.backtotop {
+  width: 50px;
+  height: 50px;
+  background: #FF5733;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border: 0;
+}
+
 @media (max-width: 575.98px) {
   .title-shape {
     -webkit-transform: translateX(0%);
@@ -290,7 +306,7 @@ a:hover {
   }
 }
 
-.radius-8 {
+.radius {
   border-radius: 8px !important;
 }
 
@@ -649,11 +665,11 @@ a:hover {
   width: 100%;
 }
 
-.radius {
+.shape {
   position: absolute;
 }
 
-.radius-1 {
+.shape-1 {
   left: calc(50% - 60px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -661,7 +677,7 @@ a:hover {
   z-index: -1;
 }
 
-.radius-2 {
+.shape-2 {
   left: calc(50% - 60px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -669,7 +685,7 @@ a:hover {
   z-index: -2;
 }
 
-.radius-3 {
+.shape-3 {
   left: calc(50% - 91px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -677,7 +693,7 @@ a:hover {
   z-index: -3;
 }
 
-.radius-4 {
+.shape-4 {
   right: calc(50% - 90px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -685,7 +701,7 @@ a:hover {
   z-index: -1;
 }
 
-.radius-5 {
+.shape-5 {
   right: calc(50% - 130px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -693,7 +709,7 @@ a:hover {
   z-index: -2;
 }
 
-.radius-6 {
+.shape-6 {
   right: calc(50% - 130px);
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1735,16 +1751,5 @@ footer .footer-bottom a {
   .contact::after {
     width: 50%;
   }
-}
-
-.backtotop {
-  padding: 20px;
-  background: #FF5733;
-  color: #fff;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  border: 0;
 }
 /*# sourceMappingURL=style.css.map */
