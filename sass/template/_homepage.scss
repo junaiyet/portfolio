@@ -357,7 +357,7 @@
 
 // ////////////
 
-.providing-services {
+.services {
     position: relative;
     padding-bottom: 80px;
 
@@ -418,7 +418,7 @@
 }
 
 @include mobile {
-    .providing-services {
+    .services {
         padding-bottom: 0px;
 
         &::after {
@@ -428,7 +428,7 @@
 }
 
 @include tablet {
-    .providing-services {
+    .services {
         padding-bottom: 0px;
 
         &::after {
@@ -438,7 +438,7 @@
 }
 
 @include desktop {
-    .providing-services {
+    .services {
         padding-bottom: 0px;
 
         &::after {
