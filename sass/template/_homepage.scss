@@ -276,7 +276,8 @@
         margin-right: 10px;
         max-width: 15%;
         padding: 0 15px;
-
+        height: 50px;
+        // background-color: $primary-bg;
         &:last-child {
             margin-right: 0;
         }
@@ -295,7 +296,7 @@
 
 
 // //////////
-.has-bg {
+.has-bg-color {
     position: relative;
     padding: 88px 0;
 
@@ -314,7 +315,7 @@
 }
 
 @include mobile {
-    .has-bg {
+    .has-bg-color {
         text-align: center;
         padding: 0px 0;
 
@@ -329,7 +330,7 @@
 }
 
 @include tablet {
-    .has-bg{
+    .has-bg-color{
         text-align: center;
         padding: 0px 0;
 
@@ -344,7 +345,7 @@
 }
 
 @include desktop {
-    .has-bg {
+    .has-bg-color {
         padding: 20px 0;
 
         p {

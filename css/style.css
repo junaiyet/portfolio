@@ -814,6 +814,7 @@ a:hover {
   margin-right: 10px;
   max-width: 15%;
   padding: 0 15px;
+  height: 50px;
 }
 
 .brand-logo .brand-logo-img:last-child {
@@ -826,12 +827,12 @@ a:hover {
   }
 }
 
-.has-bg {
+.has-bg-color {
   position: relative;
   padding: 88px 0;
 }
 
-.has-bg::after {
+.has-bg-color::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -845,36 +846,36 @@ a:hover {
 }
 
 @media (max-width: 575.98px) {
-  .has-bg {
+  .has-bg-color {
     text-align: center;
     padding: 0px 0;
   }
-  .has-bg::after {
+  .has-bg-color::after {
     display: none;
   }
-  .has-bg h2 {
+  .has-bg-color h2 {
     padding-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .has-bg {
+  .has-bg-color {
     text-align: center;
     padding: 0px 0;
   }
-  .has-bg::after {
+  .has-bg-color::after {
     display: none;
   }
-  .has-bg h2 {
+  .has-bg-color h2 {
     padding-bottom: 30px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .has-bg {
+  .has-bg-color {
     padding: 20px 0;
   }
-  .has-bg p {
+  .has-bg-color p {
     font-size: 14px;
     line-height: 24px;
   }
