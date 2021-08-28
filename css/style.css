@@ -897,6 +897,10 @@ a:hover {
   }
 }
 
+.card:last-child .card-icon i {
+  color: #0000;
+}
+
 .services {
   position: relative;
   padding-bottom: 80px;
@@ -927,16 +931,16 @@ a:hover {
           transform: scale(0.97);
 }
 
-.services .card .card-icon {
+.services .card .card-icon i {
   font-size: 50px;
   color: #0062FF;
 }
 
-.services .card .card-icon-second {
+.services .card .card-icon .card-icon-second {
   color: #FFE974;
 }
 
-.services .card .card-icon-third {
+.services .card .card-icon .card-icon-third {
   color: #FF6F6F;
 }
 

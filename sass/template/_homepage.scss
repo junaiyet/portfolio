@@ -277,6 +277,7 @@
         max-width: 15%;
         padding: 0 15px;
         height: 50px;
+
         // background-color: $primary-bg;
         &:last-child {
             margin-right: 0;
@@ -330,7 +331,7 @@
 }
 
 @include tablet {
-    .has-bg-color{
+    .has-bg-color {
         text-align: center;
         padding: 0px 0;
 
@@ -356,7 +357,9 @@
 }
 
 // ////////////
-
+.card:last-child .card-icon i{
+    color: #0000;
+}
 .services {
     position: relative;
     padding-bottom: 80px;
@@ -379,21 +382,26 @@
         padding-top: 53px;
         padding-bottom: 55px;
         transition: .6s;
-        &:hover{
+
+        &:hover {
             transform: scale(.97);
         }
-            .card-icon {
-                font-size: 50px;
-                color: #0062FF;
-      
-            }
-            .card-icon-second{
-                color: #FFE974
-            }
-            .card-icon-third{
-                color: #FF6F6F;
-            }
-     
+     .card-icon{
+        i {
+            font-size: 50px;
+            color: #0062FF;
+        }
+        .card-icon-second {
+            color: #FFE974
+        }
+
+        .card-icon-third {
+            color: #FF6F6F;
+        }
+     }
+        
+
+
         .card-body {
             .card-title {
                 margin-bottom: 20px;
@@ -935,7 +943,7 @@ footer {
 
 @include desktop {
     footer {
-        .footer-hadding{
+        .footer-hadding {
             margin-bottom: 30px;
         }
 
