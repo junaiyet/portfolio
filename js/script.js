@@ -160,7 +160,7 @@ $('.brand-logo-slider').slick({
 },3000);
 
 
-  new WOW().init();
+
 
 
 

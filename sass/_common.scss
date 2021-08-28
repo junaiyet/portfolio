@@ -65,13 +65,60 @@ border-radius: 8px !important;
     box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06) !important;
 }
 .section-sm{
-  margin-bottom: 100px;
-  margin-top: 210px;
+    margin-top: 205px;
+    margin-bottom: 100px;
+}
+@include mobile{
+    .section-sm {
+        margin-top: 140px;
+        margin-bottom: 70px;
+    }
+}
+@include tablet{
+    .section-sm {
+        margin-top: 160px;
+        margin-bottom: 80px;
+    }
+}
+@include desktop{
+    .section-sm {
+        margin-top: 170px;
+        margin-bottom: 90px;
+    }
 }
 .section-md{
     margin-bottom: 120px;
 }
+@include mobile{
+    .section-md{
+        margin-bottom: 60px;
+    }   
+}
+@include tablet{
+    .section-md {
+        margin-bottom: 80px;
+    } 
+}
+@include desktop{
+    .section-md {
+        margin-bottom: 100px;
+    } 
+}
 .section{
     margin-bottom: 160px;   
-    // margin: 80px 0;
+}
+@include mobile{
+    .section{
+        margin-bottom: 80px;   
+    }   
+}
+@include tablet{
+    .section{
+        margin-bottom: 100px;   
+    }   
+}
+@include desktop{
+    .section{
+        margin-bottom: 120px;   
+    }   
 }
