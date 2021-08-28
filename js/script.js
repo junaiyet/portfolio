@@ -163,7 +163,6 @@ $('.brand-logo-slider').slick({
 
 
 // //////////////
-AOS.init();
 
 
 

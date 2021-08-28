@@ -361,7 +361,6 @@
 .services {
     position: relative;
     padding-bottom: 80px;
-
     &::after {
         content: "";
         position: absolute;
@@ -374,8 +373,6 @@
         background: $primary-bg;
 
     }
-
-
     .card {
         padding-top: 53px;
         padding-bottom: 55px;
@@ -388,18 +385,17 @@
         i {
             font-size: 50px;
             color: #0062FF;
-        }
-        .card-icon-second {
-            color: #FFE974
-        }
 
-        .card-icon-third {
-            color: #FF6F6F;
         }
+   
+        // .card-icon-second {
+        //     color: #FFE974
+        // }
+
+        // .card-icon-third {
+        //     color: #FF6F6F;
+        // }
      }
-        
-
-
         .card-body {
             .card-title {
                 margin-bottom: 20px;
@@ -457,8 +453,6 @@
 
 
 .experience {
-
-
     .experience-title-shape {
         transform: translateX(50%);
     }
@@ -606,7 +600,6 @@
 
 .testimonial {
     position: relative;
-
     .bg-primary {
         padding-top: 32px;
         padding-bottom: 80px;

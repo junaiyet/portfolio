@@ -92,6 +92,7 @@ border-radius: 8px !important;
 }
 .section-md{
     margin-bottom: 120px;
+
 }
 @include mobile{
     .section-md{
@@ -109,7 +110,8 @@ border-radius: 8px !important;
     } 
 }
 .section{
-    margin-bottom: 160px;   
+    margin-bottom: 160px;  
+
 }
 @include mobile{
     .section{
@@ -126,7 +128,6 @@ border-radius: 8px !important;
         margin-bottom: 120px;   
     }   
 }
-
 
 
 
