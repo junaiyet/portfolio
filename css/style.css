@@ -41,7 +41,7 @@ h6 {
 h1,
 .h1 {
   font-size: 64px;
-  line-height: 74px;
+  line-height: 1.3;
 }
 
 @media (max-width: 575.98px) {
@@ -79,7 +79,7 @@ h1,
 h2,
 .h2 {
   font-size: 48px;
-  line-height: 63px;
+  line-height: 1.2;
 }
 
 @media (max-width: 575.98px) {
@@ -999,6 +999,12 @@ a:hover {
   .experience {
     text-align: center;
   }
+  .experience .block .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .experience h2 {
     font-size: 28px;
   }
@@ -1014,11 +1020,11 @@ a:hover {
   .experience h2 {
     font-size: 30px;
   }
-  .experience .box {
-    margin-bottom: 30px;
-  }
-  .experience .box .h2 {
-    font-size: 30px;
+  .experience .block .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1280,16 +1286,7 @@ p a:hover {
 }
 
 @media (max-width: 575.98px) {
-  footer .footer-hadding {
-    margin-bottom: 20px;
-  }
-  .footer-links {
-    margin-bottom: 30px;
-  }
-  .footer-links .list-inline-item a {
-    font-size: 14px;
-  }
-  .footer-links .list-inline-item:not(:last-child) {
+  .list-inline .list-inline-item:not(:last-child) {
     margin-right: 15px;
   }
 }
@@ -1413,14 +1410,35 @@ p a:hover {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .about-hero .about-hero-img::after {
+  .about-hero .about-hero-img::before {
     display: none;
   }
-  .about-hero .about-hero-img::before {
+  .about-hero .about-hero-img::after {
     display: none;
   }
   .about-hero .about-hero-img {
     padding-bottom: 0px;
+  }
+  .about-hero .has-circle .circle-7 {
+    top: 503px;
+  }
+  .about-hero .has-circle .circle-1 {
+    left: -160px;
+    top: -272px;
+    width: 230px;
+    height: 230px;
+  }
+  .about-hero .has-circle .circle-3 {
+    left: 4%;
+    top: -580px;
+  }
+  .about-hero .has-circle .circle-5 {
+    top: -226px;
+  }
+  .about-hero .has-circle .circle-6 {
+    width: 200px;
+    height: 100px;
+    top: -750px;
   }
 }
 
@@ -1520,7 +1538,7 @@ p a:hover {
   left: 0;
   top: 0;
   background-color: #F9F9F9;
-  width: 57%;
+  width: 50%;
   height: 100%;
   z-index: -1;
 }
@@ -1528,6 +1546,7 @@ p a:hover {
 .contact .contact-from {
   width: 46%;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .contact .contact-from:last-child {
@@ -1536,24 +1555,47 @@ p a:hover {
 }
 
 .contact .contact-from input {
+  position: absolute;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
   width: 100%;
+  bottom: 5px;
+}
+
+.contact .contact-from input::-webkit-input-placeholder {
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+.contact .contact-from input:not(:focus)::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .contact .contact-from input:focus-visible {
   outline: none;
 }
 
-.contact .contact-from .patricklucas {
-  font-size: 16px;
-  line-height: 16px;
+.contact .contact-from label {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  -webkit-transform-origin: 0 -150%;
+          transform-origin: 0 -150%;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  pointer-events: none;
+  font-size: 14px;
 }
 
-.contact .contact-from h6 {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500px;
+.contact .contact-from input:focus ~ label,
+.contact .contact-from input:valid ~ label {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  font-size: 18px;
 }
 
 .contact .social-links .social-item a i {
@@ -1590,11 +1632,29 @@ p a:hover {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .contact {
-    padding-top: 160px;
-    padding-bottom: 55px;
+    padding-top: 125px;
+    padding-bottom: 45px;
+  }
+  .contact h6 {
+    text-align: left !important;
   }
   .contact::after {
-    width: 50%;
+    width: 100%;
+  }
+  .contact .contact-information {
+    text-align: center;
+  }
+  .contact .contact-paragraph {
+    text-align: center;
+  }
+  .contact .social-contacts {
+    text-align: center;
+  }
+  .contact .social-links {
+    text-align: center;
+  }
+  .contact form button {
+    width: 100%;
   }
 }
 
@@ -1606,5 +1666,46 @@ p a:hover {
   .contact::after {
     width: 50%;
   }
+}
+
+.contact-from input {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  cursor: text;
+}
+
+.contact-from input::-webkit-input-placeholder {
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+.contact-from input:not(:focus)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.contact-from label {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  -webkit-transform-origin: 0 -150%;
+          transform-origin: 0 -150%;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  pointer-events: none;
+}
+
+.contact-from input:focus ~ label,
+.contact-from input:valid ~ label {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 /*# sourceMappingURL=style.css.map */

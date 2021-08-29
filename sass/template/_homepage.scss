@@ -507,7 +507,12 @@
         text-align: center;
 
 
-   
+       
+        .block{
+            .d-flex{
+                flex-direction: column;
+            }
+        }
 
         h2 {
             font-size: 28px;
@@ -528,13 +533,10 @@
         h2 {
             font-size: 30px;
         }
-
-        .box {
-
-            margin-bottom: 30px;
-
-            .h2 {
-                font-size: 30px;
+    
+        .block{
+            .d-flex{
+                flex-direction: column;
             }
         }
 
@@ -862,27 +864,8 @@ p{
 }
 
 @include mobile {
-    footer {
-        .footer-hadding {
-            margin-bottom: 20px;
-        }
-
-    }
-
-    .footer-links {
-
-        margin-bottom: 30px;
-
-        .list-inline-item {
-            a {
-                font-size: 14px;
-            }
-
-            &:not(:last-child) {
-                margin-right: 15px;
-            }
-        }
-
+    .list-inline .list-inline-item:not(:last-child) {
+        margin-right: 15px;
     }
 
 }
