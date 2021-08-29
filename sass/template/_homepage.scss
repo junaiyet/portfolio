@@ -104,46 +104,54 @@
     position: absolute;
 }
 
+
 .shape-1 {
-    left: calc(50% - 60px);
+    left: calc(50% - 65px);
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: -2;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 20px solid $primary-color;
 }
 
 .shape-2 {
-    left: calc(50% - 60px);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
-}
-
-.shape-3 {
-    left: calc(50% - 91px);
+    left: calc(50% - 96px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -3;
+    width: 32.5px;
+    height: 32.5px;
+    background: transparent;
+    border-radius: 50%;
+    border: 20px solid $secondery-color;
+}
+
+
+.shape-3 {
+    right: calc(50% - 132px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 20px solid $primary-color;
 }
 
 .shape-4 {
-    right: calc(50% - 90px);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.shape-5 {
-    right: calc(50% - 130px);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
-}
-
-.shape-6 {
-    right: calc(50% - 130px);
+    right: calc(50% - 138px);
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -3;
+    width: 32.5px;
+    height: 32.5px;
+    background: transparent;
+    border-radius: 50%;
+    border: 20px solid $secondery-color;
 }
 
 .has-circle {
@@ -155,8 +163,12 @@
     }
 
     .circle-1 {
-        left: 0px;
+        left: -200px;
         top: 60%;
+        width: 370px;
+        height: 370px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
     }
 
     .circle-2 {
@@ -197,13 +209,24 @@
     }
 
     .circle-6 {
-        right: 0;
-        top: -300px;
+        width: 280px;
+        height: 140px;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        border: 1px solid $primary-color;
+        border-bottom: 0;
+        right: -70px;
+        transform: rotate(270deg);
     }
 
     .circle-7 {
-        right: 0;
-        bottom: -400px;
+        width: 60px;
+        height: 30px;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        border: 1px solid $primary-color;
+        border-bottom: 0;
+        right: -15px;
+        transform: rotate(270deg);
+        bottom: -380px;
     }
 
 }
@@ -231,31 +254,26 @@
 }
 
 @include desktop {
-    .has-circle {
+    .has-circle{
         .circle-1 {
-            top: 180px;
+            width: 300px;
+            height: 300px;
 
-            svg {
-                width: 100px;
-                height: 180px;
-            }
         }
-
-        .circle-3 {
-
-            top: 50px;
+      .circle-3 {
+       
+            top: 30px;
         }
+     .circle-5 {
 
-        .circle-5 {
-            right: 10%;
-            top: 179px;
+            right: 8%;
+            top: 162px;
         }
-
         .circle-6 {
-            svg {
-                width: 100px;
-                height: 180px;
-            }
+            width: 200px;
+            height: 100px;
+            right: -50px;
+        
         }
     }
 }
@@ -276,7 +294,7 @@
         margin-right: 10px;
         max-width: 15%;
         padding: 0 15px;
-        height: 50px;
+        max-height: 50px;
 
         // background-color: $primary-bg;
         &:last-child {
@@ -361,6 +379,14 @@
 .services {
     position: relative;
     padding-bottom: 80px;
+ .icon{
+     &:nth-child(2) .card-icon i{
+         color: #FFE974;
+     }
+     &:nth-child(3) .card-icon i{
+         color: #FF6F6F;
+     }
+ }
     &::after {
         content: "";
         position: absolute;
@@ -373,29 +399,30 @@
         background: $primary-bg;
 
     }
+
     .card {
-        padding-top: 53px;
-        padding-bottom: 55px;
         transition: .6s;
 
         &:hover {
             transform: scale(.97);
         }
-     .card-icon{
-        i {
-            font-size: 50px;
-            color: #0062FF;
 
+        .card-icon {
+            i {
+                font-size: 50px;
+                color: #0062FF;
+
+            }
+
+            // .card-icon-second {
+            //     color: #FFE974
+            // }
+
+            // .card-icon-third {
+            //     color: #FF6F6F;
+            // }
         }
-   
-        // .card-icon-second {
-        //     color: #FFE974
-        // }
 
-        // .card-icon-third {
-        //     color: #FF6F6F;
-        // }
-     }
         .card-body {
             .card-title {
                 margin-bottom: 20px;
@@ -453,32 +480,12 @@
 
 
 .experience {
-    .experience-title-shape {
-        transform: translateX(50%);
-    }
+
 
     h2 {
         font-size: 46px;
     }
 
-    .box {
-        padding: 25px 23px;
-        background-color: $primary-bg;
-        margin-right: 30px;
-
-        .h2 {
-            font-size: 44px;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        p {
-            font-size: 15px;
-            line-height: 26px;
-        }
-    }
 
     .block {
         margin-bottom: 55px;
@@ -500,9 +507,7 @@
         text-align: center;
 
 
-        .experience-title-shape {
-            transform: translateX(0%);
-        }
+   
 
         h2 {
             font-size: 28px;
@@ -512,19 +517,6 @@
             font-size: 14px;
         }
 
-        .box {
-            padding: 10px 10px;
-            margin-right: 15px;
-            margin-bottom: 30px;
-
-            .h2 {
-                font-size: 26px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-        }
 
     }
 }
@@ -547,9 +539,7 @@
         }
 
 
-        .experience-title-shape {
-            transform: translateX(0%);
-        }
+   
     }
 
 }
@@ -562,17 +552,7 @@
             font-size: 36px;
         }
 
-        .box {
-            margin-bottom: 30px;
-
-            .h2 {
-                font-size: 32px;
-            }
-        }
-
-        .experience-title-shape {
-            transform: translateX(0%);
-        }
+    
     }
 
 }
@@ -600,6 +580,7 @@
 
 .testimonial {
     position: relative;
+
     .bg-primary {
         padding-top: 32px;
         padding-bottom: 80px;
@@ -607,6 +588,7 @@
 
 
     .testimonial-left-slider {
+        
         .img {
             width: 70px;
             height: 70px;
@@ -630,10 +612,11 @@
             line-height: 50px;
             color: #AAAAAA;
             font-size: 20px;
-            transform: .4s;
+            transform: 4s !important;
+         
 
             &:hover {
-                background-color: $primary-color;
+                background-color: $white;
                 color: $text-color;
                 cursor: pointer;
             }
@@ -651,10 +634,10 @@
             line-height: 50px;
             color: #AAAAAA;
             font-size: 20px;
-            transform: .4s;
+            transform: .4s !important;
 
             &:hover {
-                background-color: $primary-color;
+                background-color: $white;
                 color: $text-color;
                 cursor: pointer;
             }
@@ -773,8 +756,8 @@
             }
         }
 
-        .meta {
-            .meta-item {
+        .meta-list {
+            .list-inline-item {
                 position: relative;
 
                 &:not(:last-child) {
@@ -844,19 +827,6 @@
 
 // ///////////
 footer {
-    .footer-hadding {
-        margin-bottom: 50px;
-        font-weight: 700;
-    }
-
-    .mobile-number {
-        color: $secondery-text-color;
-
-        &:hover {
-            color: $primary-color !important;
-        }
-
-    }
 
     .footer-bottom {
         a {
@@ -865,10 +835,17 @@ footer {
         }
     }
 }
+p{
+    a{
+        transition: .4s;
+        display: inline-block;
+        &:hover{
+            color: $primary-color !important;
+        }
+    }
 
-.footer-links {
-    margin-bottom: 85px;
-
+}
+.list-inline {
     .list-inline-item {
         &:not(:last-child) {
             margin-right: 30px;
@@ -877,6 +854,9 @@ footer {
         a {
             color: $text-color !important;
             transition: .4s;
+            &:hover{
+                color: $primary-color !important;
+            }
         }
     }
 }

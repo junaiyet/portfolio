@@ -15,6 +15,9 @@ p,
     font-weight: 400;
     color: $secondery-text-color !important;
 }
+.small{
+    font-size: 16px;
+}
 @include mobile{
     p,
     .paragraph {
