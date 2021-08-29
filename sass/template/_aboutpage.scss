@@ -57,7 +57,7 @@
         .circle-6 {
             width: 260px;
             height: 130px;
-            top: -750px;
+            top: -830px;
         }
     .circle-7 {
             top: 550px;
@@ -70,9 +70,6 @@
 
         .about-hero-img {
             padding-bottom: 0px;
-        }
-
-        .about-hero-img {
             &::after {
                 display: none;
             }
@@ -81,6 +78,7 @@
                 display: none;
             }
         }
+
 
     }
 
@@ -255,8 +253,6 @@
     .blogpost {
         text-align: center;
         .blog {
-   
-
             .blog-date {
 
                 &::after {

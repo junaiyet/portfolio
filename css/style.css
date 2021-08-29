@@ -755,6 +755,7 @@ a:hover {
   right: -70px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+  top: -250px;
 }
 
 .has-circle .circle-7 {
@@ -1375,7 +1376,7 @@ p a:hover {
 .about-hero .has-circle .circle-6 {
   width: 260px;
   height: 130px;
-  top: -750px;
+  top: -830px;
 }
 
 .about-hero .has-circle .circle-7 {
