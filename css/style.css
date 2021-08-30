@@ -618,16 +618,13 @@ a:hover {
 }
 
 .hero-img {
-  background-color: #FCE2DC;
-  padding: 5px;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
   display: inline-block;
 }
 
 .hero-img img {
   width: 100%;
+  border: 5px solid #FCE2DC;
+  border-radius: 50%;
 }
 
 .shape {
@@ -973,27 +970,7 @@ a:hover {
   margin-right: 0 !important;
 }
 
-.experience .block {
-  margin-bottom: 55px;
-}
-
-.experience .block:last-child {
-  border-bottom: 0;
-  margin-bottom: 0 !important;
-}
-
-.experience .block span {
-  color: #777777;
-  font-size: 16px;
-}
-
 @media (max-width: 575.98px) {
-  .experience .d-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .experience .block .d-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -84,15 +84,12 @@
 
 
 .hero-img {
-    background-color: #FCE2DC;
-    padding: 5px;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
     display: inline-block;
 
     img {
         width: 100%;
+        border: 5px solid #FCE2DC;
+        border-radius: 50%;
     }
 }
 
@@ -485,19 +482,19 @@
              margin-right: 0 !important;
          }
      }
-    .block {
-        margin-bottom: 55px;
+    // .block {
+    //     margin-bottom: 55px;
 
-        &:last-child {
-            border-bottom: 0;
-            margin-bottom: 0 !important;
-        }
+    //     &:last-child {
+    //         border-bottom: 0;
+    //         margin-bottom: 0 !important;
+    //     }
 
-        span {
-            color: $quaternary-text-color;
-            font-size: 16px;
-        }
-    }
+    //     span {
+    //         color: $quaternary-text-color;
+    //         font-size: 16px;
+    //     }
+    // }
 }
 
 @include mobile {
@@ -505,9 +502,6 @@
         // text-align: center;
 
 
-        .d-flex{
-            flex-direction: column;
-        }
         .block{
             .d-flex{
                 flex-direction: column;
