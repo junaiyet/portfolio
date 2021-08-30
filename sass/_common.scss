@@ -1,12 +1,13 @@
-
 * {
     margin: 0;
     padding: 0;
 }
-::selection{
-    background-color:$primary-color ;
+
+::selection {
+    background-color: $primary-color;
     color: $white;
 }
+
 ol,
 ul {
     list-style-type: none;
@@ -19,101 +20,113 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
-a{
+
+a {
     transition: .4s;
-    &:hover{
+
+    &:hover {
         color: $primary-color !important;
     }
 }
-.text-primary{
+
+.text-primary {
     color: $primary-color !important;
 }
-.text-secondery{
+
+.text-secondery {
     color: $tertiary-text-color !important;
 }
-.text-tertiary{
+
+.text-tertiary {
     color: $text-color !important;
 }
-.bg-primary{
+
+.bg-primary {
     background-color: $primary-bg !important;
 }
 
-
-.radius{
-border-radius: 8px !important;
+.radius {
+    border-radius: 8px !important;
 }
-.shadow{
+
+.shadow {
     box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06) !important;
 }
-.section-sm{
+
+.section-sm {
     margin-top: 90px;
     margin-bottom: 100px;
 }
-@include mobile{
+
+@include mobile {
     .section-sm {
         margin-bottom: 70px;
     }
 }
-@include tablet{
+
+@include tablet {
     .section-sm {
         margin-bottom: 80px;
     }
 }
-@include desktop{
+
+@include desktop {
     .section-sm {
         margin-bottom: 90px;
     }
 }
-.section-md{
+
+.section-md {
     margin-bottom: 120px;
 
 }
-@include mobile{
-    .section-md{
+
+@include mobile {
+    .section-md {
         margin-bottom: 60px;
-    }   
+    }
 }
-@include tablet{
+
+@include tablet {
     .section-md {
         margin-bottom: 80px;
-    } 
+    }
 }
-@include desktop{
+
+@include desktop {
     .section-md {
         margin-bottom: 100px;
-    } 
-}
-.section{
-    margin-bottom: 160px;  
-
-}
-@include mobile{
-    .section{
-        margin-bottom: 80px;   
-    }   
-}
-@include tablet{
-    .section{
-        margin-bottom: 100px;   
-    }   
-}
-@include desktop{
-    .section{
-        margin-bottom: 120px;   
-    }   
+    }
 }
 
+.section {
+    margin-bottom: 160px;
 
+}
 
+@include mobile {
+    .section {
+        margin-bottom: 80px;
+    }
+}
 
+@include tablet {
+    .section {
+        margin-bottom: 100px;
+    }
+}
 
+@include desktop {
+    .section {
+        margin-bottom: 120px;
+    }
+}
 
-
-
-.section-title{
-    strong{
+.section-title {
+    strong {
         position: relative;
-        svg{
+
+        svg {
             position: absolute;
             right: 0;
             bottom: -20px;
@@ -121,20 +134,6 @@ border-radius: 8px !important;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .backtotop {
     width: 50px;
