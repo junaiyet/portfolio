@@ -893,11 +893,11 @@ a:hover {
   padding-bottom: 80px;
 }
 
-.services .icon:nth-child(2) .card-icon i {
+.services .card-item:nth-child(2) .card-icon i {
   color: #FFE974;
 }
 
-.services .icon:nth-child(3) .card-icon i {
+.services .card-item:nth-child(3) .card-icon i {
   color: #FF6F6F;
 }
 
