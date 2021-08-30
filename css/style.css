@@ -355,6 +355,20 @@ a:hover {
   max-width: 100%;
 }
 
+.backtotop {
+  width: 50px;
+  height: 50px;
+  background: #FF5733;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border: 0;
+  text-align: center;
+  line-height: 50px;
+}
+
 .fixed-manu {
   background-color: #fff;
 }
@@ -971,12 +985,6 @@ a:hover {
 }
 
 @media (max-width: 575.98px) {
-  .experience .block .d-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .experience h2 {
     font-size: 28px;
   }
@@ -1533,11 +1541,19 @@ p a:hover {
 
 .contact .contact-from input {
   position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  cursor: text;
   background-color: transparent;
   font-size: 16px;
   font-weight: 600;
   color: #222222;
-  width: 100%;
   bottom: 5px;
 }
 
@@ -1575,7 +1591,7 @@ p a:hover {
   font-size: 18px;
 }
 
-.contact .social-links .social-item a i {
+.contact .contact-us .list-inline-item a i {
   font-size: 20px !important;
 }
 
@@ -1589,18 +1605,6 @@ p a:hover {
   }
   .contact::after {
     width: 100%;
-  }
-  .contact .contact-information {
-    text-align: center;
-  }
-  .contact .contact-paragraph {
-    text-align: center;
-  }
-  .contact .social-contacts {
-    text-align: center;
-  }
-  .contact .social-links {
-    text-align: center;
   }
   .contact form button {
     width: 100%;
@@ -1618,18 +1622,6 @@ p a:hover {
   .contact::after {
     width: 100%;
   }
-  .contact .contact-information {
-    text-align: center;
-  }
-  .contact .contact-paragraph {
-    text-align: center;
-  }
-  .contact .social-contacts {
-    text-align: center;
-  }
-  .contact .social-links {
-    text-align: center;
-  }
   .contact form button {
     width: 100%;
   }
@@ -1643,46 +1635,5 @@ p a:hover {
   .contact::after {
     width: 50%;
   }
-}
-
-.contact-from input {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  cursor: text;
-}
-
-.contact-from input::-webkit-input-placeholder {
-  -webkit-transition: color 300ms ease;
-  transition: color 300ms ease;
-}
-
-.contact-from input:not(:focus)::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.contact-from label {
-  position: absolute;
-  top: -10px;
-  left: 0px;
-  -webkit-transform-origin: 0 -150%;
-          transform-origin: 0 -150%;
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease;
-  pointer-events: none;
-}
-
-.contact-from input:focus ~ label,
-.contact-from input:valid ~ label {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 /*# sourceMappingURL=style.css.map */

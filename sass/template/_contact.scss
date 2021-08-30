@@ -2,7 +2,6 @@
     padding-top: 205px;
     padding-bottom: 95px;
     position: relative;
-
     &::after {
         content: "";
         position: absolute;
@@ -13,36 +12,36 @@
         height: 100%;
         z-index: -1;
     }
-
     .contact-from {
         width: 46%;
         margin-bottom: 40px;
         position: relative;
-
         &:last-child {
             width: 100%;
             margin-bottom: 60px;
         }
-
         input {
             position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            outline: none;
+            cursor: text;
             background-color: transparent;
             font-size: 16px;
             font-weight: 600;
             color: $text-color;
-            width: 100%;
             bottom: 5px;
             &::-webkit-input-placeholder {
                 transition: color 300ms ease;
             }
-    
             &:not(:focus)::-webkit-input-placeholder {
                 color: transparent;
             }
-
             &:focus-visible {
                 outline: none;
-
             }
         }
         label {
@@ -54,19 +53,14 @@
             pointer-events: none;
             font-size: 14px;
         }
-    
         input:focus~label,
         input:valid~label {
             transform: scale(0.7);
             font-size: 18px;
         }
-
-
- 
     }
-
-    .social-links {
-        .social-item {
+    .contact-us{
+        .list-inline-item{
             a {
                 i {
 
@@ -90,35 +84,12 @@
             width: 100%;
         }
 
-        .contact-information {
-            text-align: center;
-        }
-
-        .contact-paragraph {
-            text-align: center;
-        }
-
-        .social-contacts {
-            text-align: center;
-        }
-
-        .social-links {
-            text-align: center;
-        }
-
         form {
             button {
                 width: 100%;
-                // text-align: center;
-                // transform: translate(50%);
+
             }
         }
-
-        // .btn{
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        // }
 
     }
 }
@@ -134,42 +105,18 @@
         &::after {
             width: 100%;
         }
-
-        .contact-information {
-            text-align: center;
-        }
-
-        .contact-paragraph {
-            text-align: center;
-        }
-
-        .social-contacts {
-            text-align: center;
-        }
-
-        .social-links {
-            text-align: center;
-        }
+    
 
         form {
             button {
                 width: 100%;
-                // text-align: center;
-                // transform: translate(50%);
             }
         }
 
-        // .btn{
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        // }
+
 
     }
 }
-
-
-
 @include desktop {
     .contact {
         padding-top: 175px;
@@ -178,43 +125,5 @@
         &::after {
             width: 50%;
         }
-    }
-}
-
-
-.contact-from {
-   
-
-    input {
-        position: absolute;
-        box-sizing: border-box;
-        width: 100%;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        outline: none;
-        cursor: text;
-
-        &::-webkit-input-placeholder {
-            transition: color 300ms ease;
-        }
-
-        &:not(:focus)::-webkit-input-placeholder {
-            color: transparent;
-        }
-    }
-
-    label {
-        position: absolute;
-        top: -10px;
-        left: 0px;
-        transform-origin: 0 -150%;
-        transition: transform 300ms ease;
-        pointer-events: none;
-    }
-
-    input:focus~label,
-    input:valid~label {
-        transform: scale(0.7);
     }
 }

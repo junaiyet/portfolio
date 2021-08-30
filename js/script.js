@@ -8,20 +8,20 @@ $(window).scroll(function () {
     } else {
       $(".navigation").removeClass("fixed-manu")
     }
-    // if($(window).scrollTop() > 1000){
-    //   $(".backtotop").fadeIn()
-    // }else{
-    //   $(".backtotop").fadeOut()
-    // }
+    if($(window).scrollTop() > 1000){
+      $(".backtotop").fadeIn()
+    }else{
+      $(".backtotop").fadeOut()
+    }
   
   })
   
-  // $(".backtotop").click(function(){
-  //   $("html,body").animate({
-  //     scrollTop:0,
-  //   })
+  $(".backtotop").click(function(){
+    $("html,body").animate({
+      scrollTop:0,
+    })
     
-  // })
+  })
   
 // //////////////////
 $('.brand-logo-slider').slick({
