@@ -250,26 +250,29 @@
 }
 
 @include desktop {
-    .has-circle{
+    .has-circle {
         .circle-1 {
             width: 300px;
             height: 300px;
 
         }
-      .circle-3 {
-       
+
+        .circle-3 {
+
             top: 30px;
         }
-     .circle-5 {
+
+        .circle-5 {
 
             right: 8%;
             top: 162px;
         }
+
         .circle-6 {
             width: 200px;
             height: 100px;
             right: -50px;
-        
+
         }
     }
 }
@@ -313,6 +316,8 @@
 .has-bg-color {
     position: relative;
     padding: 88px 0;
+    overflow-x: hidden;
+
 
     &::after {
         content: "";
@@ -374,14 +379,17 @@
 .services {
     position: relative;
     padding-bottom: 80px;
- .card-item{
-     &:nth-child(2) .card-icon i{
-         color: #FFE974;
-     }
-     &:nth-child(3) .card-icon i{
-         color: #FF6F6F;
-     }
- }
+  overflow-x: hidden;
+    .card-item {
+        &:nth-child(2) .card-icon i {
+            color: #FFE974;
+        }
+
+        &:nth-child(3) .card-icon i {
+            color: #FF6F6F;
+        }
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -471,17 +479,18 @@
 
 
 .experience {
-      
+
 
     h2 {
         font-size: 46px;
     }
 
-     .d-flex{
-         :last-child{
-             margin-right: 0 !important;
-         }
-     }
+    .d-flex {
+        :last-child {
+            margin-right: 0 !important;
+        }
+    }
+
     // .block {
     //     margin-bottom: 55px;
 
@@ -527,7 +536,7 @@
         h2 {
             font-size: 30px;
         }
-  
+
     }
 
 }
@@ -540,7 +549,7 @@
             font-size: 36px;
         }
 
-    
+
     }
 
 }
@@ -576,7 +585,7 @@
 
 
     .testimonial-left-slider {
-        
+
         .img {
             width: 70px;
             height: 70px;
@@ -601,7 +610,7 @@
             color: #AAAAAA;
             font-size: 20px;
             transform: 4s !important;
-         
+
 
             &:hover {
                 background-color: $white;
@@ -653,8 +662,9 @@
             line-height: 28px;
             margin-left: 0 !important;
         }
-        .testimonial-right-slider{
-            .img{
+
+        .testimonial-right-slider {
+            .img {
                 object-position: center;
                 object-fit: contain;
                 height: 300px;
@@ -683,8 +693,9 @@
             line-height: 28px;
             margin-left: 0 !important;
         }
-        .testimonial-right-slider{
-            .img{
+
+        .testimonial-right-slider {
+            .img {
                 object-position: center;
                 object-fit: contain;
                 height: 500px;
@@ -738,6 +749,7 @@
 
 // ////////////
 .projects {
+    overflow-x: hidden;
     .card {
         position: relative;
 
@@ -810,28 +822,29 @@
 }
 
 @include tablet {
-    .projects{
-        .card{
+    .projects {
+        .card {
             .card-img-overlay {
                 padding: 10px !important;
-            }
-        } 
-    } 
-}
-
-@include desktop {
-    .projects {
- .card{
-     .card-img-overlay {
-            padding: 0px !important;
-            .card-body {
-                position: absolute;
-                bottom: 0;
-                padding-bottom: 10px !important;
             }
         }
     }
 }
+
+@include desktop {
+    .projects {
+        .card {
+            .card-img-overlay {
+                padding: 0px !important;
+
+                .card-body {
+                    position: absolute;
+                    bottom: 0;
+                    padding-bottom: 10px !important;
+                }
+            }
+        }
+    }
 }
 
 // ///////////
@@ -844,16 +857,19 @@ footer {
         }
     }
 }
-p{
-    a{
+
+p {
+    a {
         transition: .4s;
         display: inline-block;
-        &:hover{
+
+        &:hover {
             color: $primary-color !important;
         }
     }
 
 }
+
 .list-inline {
     .list-inline-item {
         &:not(:last-child) {
@@ -863,7 +879,8 @@ p{
         a {
             color: $text-color !important;
             transition: .4s;
-            &:hover{
+
+            &:hover {
                 color: $primary-color !important;
             }
         }

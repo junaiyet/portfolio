@@ -842,6 +842,7 @@ a:hover {
 .has-bg-color {
   position: relative;
   padding: 88px 0;
+  overflow-x: hidden;
 }
 
 .has-bg-color::after {
@@ -896,6 +897,7 @@ a:hover {
 .services {
   position: relative;
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 
 .services .card-item:nth-child(2) .card-icon i {
@@ -1161,6 +1163,10 @@ a:hover {
     line-height: 40px;
     font-size: 16px;
   }
+}
+
+.projects {
+  overflow-x: hidden;
 }
 
 .projects .card {
