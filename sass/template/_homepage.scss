@@ -81,11 +81,7 @@
     }
 }
 
-.hero-main {
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 20px;
-}
+
 
 .hero-img {
     background-color: #FCE2DC;
@@ -160,6 +156,8 @@
 
     .circle {
         position: absolute;
+        pointer-events: none;
+
     }
 
     .circle-1 {
@@ -292,10 +290,9 @@
     text-align: center;
 
     .brand-logo-img {
-        margin-right: 10px;
         max-width: 15%;
-        padding: 0 15px;
-        max-height: 50px;
+        margin: 0 30px;
+        max-height: 30px;
 
         // background-color: $primary-bg;
         &:last-child {
@@ -438,10 +435,6 @@
             .card-link {
                 font-size: 16px;
                 line-height: 15px;
-
-                i {
-                    margin-left: 5px;
-                }
             }
         }
     }
@@ -481,13 +474,17 @@
 
 
 .experience {
-
+      
 
     h2 {
         font-size: 46px;
     }
 
-
+     .d-flex{
+         :last-child{
+             margin-right: 0 !important;
+         }
+     }
     .block {
         margin-bottom: 55px;
 
@@ -505,10 +502,12 @@
 
 @include mobile {
     .experience {
-        text-align: center;
+        // text-align: center;
 
 
-       
+        .d-flex{
+            flex-direction: column;
+        }
         .block{
             .d-flex{
                 flex-direction: column;
@@ -529,27 +528,19 @@
 
 @include tablet {
     .experience {
-        text-align: center;
+        // text-align: center;
 
         h2 {
             font-size: 30px;
         }
-    
-        .block{
-            .d-flex{
-                flex-direction: column;
-            }
-        }
-
-
-   
+  
     }
 
 }
 
 @include desktop {
     .experience {
-        text-align: center;
+        // text-align: center;
 
         h2 {
             font-size: 36px;
@@ -668,6 +659,13 @@
             line-height: 28px;
             margin-left: 0 !important;
         }
+        .testimonial-right-slider{
+            .img{
+                object-position: center;
+                object-fit: contain;
+                height: 300px;
+            }
+        }
     }
 
 
@@ -691,6 +689,13 @@
             line-height: 28px;
             margin-left: 0 !important;
         }
+        .testimonial-right-slider{
+            .img{
+                object-position: center;
+                object-fit: contain;
+                height: 500px;
+            }
+        }
     }
 
 
@@ -699,7 +704,7 @@
 @include desktop {
     .testimonial {
         .bg-primary {
-            padding-top: 0px;
+            padding-top: 50px;
             padding-bottom: 50px;
         }
 
@@ -811,21 +816,28 @@
 }
 
 @include tablet {
-    .projects {
-        .card .breadcrumb .breadcrumb-item a {
-            font-size: 15px;
-            line-height: 15px;
-        }
-    }
+    .projects{
+        .card{
+            .card-img-overlay {
+                padding: 10px !important;
+            }
+        } 
+    } 
 }
 
 @include desktop {
     .projects {
-        .card .breadcrumb .breadcrumb-item a {
-            font-size: 16px;
-            line-height: 16px;
+ .card{
+     .card-img-overlay {
+            padding: 0px !important;
+            .card-body {
+                position: absolute;
+                bottom: 0;
+                padding-bottom: 10px !important;
+            }
         }
     }
+}
 }
 
 // ///////////

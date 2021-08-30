@@ -9,7 +9,7 @@
         left: 0;
         top: 0;
         background-color: $primary-bg;
-        width: 50%;
+        width: calc(50% + 50px);
         height: 100%;
         z-index: -1;
     }

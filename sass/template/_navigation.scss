@@ -45,7 +45,7 @@
         padding: 10px 15px;
         font-size: 24px;
         line-height: 1;
-        background-color: $primary-bg;
+        background-color: $white;
         border: 0;
         border-radius: 0;
         transition: none;
@@ -85,13 +85,13 @@
 @include mobile {
     .fixed-manu {
 
-        padding: 5px 15px !important;
+        padding: 5px 0px !important;
 
         background-color: $primary-bg;
     }
     
     .navigation {
-        padding: 5px 15px;
+        padding: 5px 0px;
         background-color: $primary-bg;
 
         .navbar-nav .nav-item .nav-link {
@@ -110,14 +110,14 @@
 @include tablet {
     .fixed-manu {
 
-        padding: 5px 15px !important;
+        padding: 5px 0px !important;
+
         background-color: $primary-bg;
-        
     }
     
     .navigation {
+        padding: 5px 0px;
         background-color: $primary-bg;
-        padding: 5px 15px;
 
         .navbar-nav .nav-item .nav-link {
             color: #222222;
