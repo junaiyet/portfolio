@@ -15,10 +15,6 @@ p,
   color: #888888 !important;
 }
 
-.small {
-  font-size: 16px;
-}
-
 @media (max-width: 575.98px) {
   p,
   .paragraph {
@@ -900,11 +896,27 @@ a:hover {
   overflow-x: hidden;
 }
 
-.services .card-item:nth-child(2) .card-icon i {
+.services .card-item:nth-child(n+1) .card-icon i {
+  color: #0062FF;
+}
+
+.services .card-item:nth-child(n+2) .card-icon i {
   color: #FFE974;
 }
 
-.services .card-item:nth-child(3) .card-icon i {
+.services .card-item:nth-child(n+3) .card-icon i {
+  color: #FF6F6F;
+}
+
+.services .card-item:nth-child(n+1) .card-icon i {
+  color: #0062FF;
+}
+
+.services .card-item:nth-child(n+2) .card-icon i {
+  color: #FFE974;
+}
+
+.services .card-item:nth-child(n+3) .card-icon i {
   color: #FF6F6F;
 }
 
@@ -933,17 +945,10 @@ a:hover {
 
 .services .card .card-icon i {
   font-size: 50px;
-  color: #0062FF;
 }
 
 .services .card .card-body .card-title {
   margin-bottom: 20px;
-}
-
-.services .card .card-body .card-text {
-  margin-bottom: 25px;
-  font-size: 16px;
-  line-height: 26px;
 }
 
 .services .card .card-body .card-link {
@@ -1096,6 +1101,8 @@ a:hover {
   }
   .testimonial .bg-primary {
     background-color: transparent !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .testimonial .testimonial-left-slider p {
     font-size: 14px;
@@ -1107,7 +1114,7 @@ a:hover {
        object-position: center;
     -o-object-fit: contain;
        object-fit: contain;
-    height: 300px;
+    height: 200px;
   }
 }
 
@@ -1120,6 +1127,8 @@ a:hover {
   }
   .testimonial .bg-primary {
     background-color: transparent !important;
+    padding-top: 25px;
+    padding-bottom: 0px;
   }
   .testimonial .testimonial-left-slider p {
     font-size: 14px;
@@ -1131,7 +1140,7 @@ a:hover {
        object-position: center;
     -o-object-fit: contain;
        object-fit: contain;
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -1576,6 +1585,22 @@ p a:hover {
   outline: none;
 }
 
+.contact .contact-from input::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.contact .contact-from input:-ms-input-placeholder {
+  color: #222222;
+}
+
+.contact .contact-from input::-ms-input-placeholder {
+  color: #222222;
+}
+
+.contact .contact-from input::placeholder {
+  color: #222222;
+}
+
 .contact .contact-from label {
   position: absolute;
   top: -15px;
@@ -1599,6 +1624,10 @@ p a:hover {
 
 .contact .contact-us .list-inline-item a i {
   font-size: 20px !important;
+}
+
+.contact .btn {
+  padding: 12px 30px;
 }
 
 @media (max-width: 575.98px) {

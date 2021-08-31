@@ -43,6 +43,9 @@
             &:focus-visible {
                 outline: none;
             }
+            &::placeholder{
+                color: $text-color;
+            }
         }
         label {
             position: absolute;
@@ -68,6 +71,9 @@
                 }
             }
         }
+    }
+    .btn {
+        padding: 12px 30px;
     }
 }
 

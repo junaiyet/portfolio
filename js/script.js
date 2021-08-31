@@ -122,7 +122,7 @@ $('.brand-logo-slider').slick({
     arrows: false,
     autoplay:false,
     fade:true,
-    speed: 3000,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.testimonial-left-slider',
